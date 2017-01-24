@@ -1,0 +1,2 @@
+"model/example","model/iges","model/mesh","model/vnd.dwf","model/vnd.flatland.3dml","model/vnd.gdl","model/vnd.gs-gdl","model/vnd.gtw","model/vnd.moml+xml","model/vnd.mts","model/vnd.parasolid.transmit.binary",
+"model/vnd.parasolid.transmit.text","model/vnd.vtu","model/vrml",

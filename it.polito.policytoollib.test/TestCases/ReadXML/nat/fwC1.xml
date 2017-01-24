@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fwC1</PolicyName>
+<PolicyType>NAT</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="POSTNAT" Label="fwC1.POSTNAT1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Address">10.1.0.1-10.1.0.1</Selector>
+<Selector Label="Destination Address">10.3.0.6-10.3.0.6</Selector>
+<Transformation>
+	<Selector Label="Source Address">10.3.0.4-10.3.0.4</Selector>
+</Transformation>
+</Rule>
+
+<Rule Action="POSTNAT" Label="fwC1.POSTNAT2">
+<ExternalDataValue>2</ExternalDataValue>
+<Selector Label="Source Address">10.1.1.0-10.1.1.255</Selector>
+<Selector Label="Destination Address">10.2.0.0-10.2.255.255</Selector>
+<Transformation>
+	<Selector Label="Source Address">10.2.0.10-10.2.0.10</Selector>
+</Transformation>
+</Rule>
+
+</Policy>

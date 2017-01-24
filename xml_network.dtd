@@ -1,0 +1,32 @@
+<!ELEMENT Network (Firewall+, FilteringZone+, Host+, Link+)>
+
+<!ELEMENT Firewall (Interface+)>
+<!ATTLIST Firewall
+	Name CDATA #REQUIRED>
+	
+<!ELEMENT Host (Interface+, Service*)>
+<!ATTLIST Host
+	Name CDATA #REQUIRED
+	FilteringZone IDREF #REQUIRED>
+	
+<!ELEMENT Interface EMPTY >	
+<!ATTLIST Interface
+	Name ID #REQUIRED
+	IP CDATA #REQUIRED>
+	
+<!ELEMENT Service EMPTY>
+<!ATTLIST Service 
+	Name CDATA #REQUIRED
+	IP CDATA #REQUIRED
+	Port CDATA #REQUIRED>
+
+<!ELEMENT FilteringZone EMPTY>
+<!ATTLIST FilteringZone
+	Name ID #REQUIRED
+	Firewall IDREF #REQUIRED
+	Subnet CDATA #REQUIRED>
+	
+<!ELEMENT Link EMPTY>
+<!ATTLIST Link
+	Endpoint1 IDREF #REQUIRED
+	Endpoint2 IDREF #REQUIRED>

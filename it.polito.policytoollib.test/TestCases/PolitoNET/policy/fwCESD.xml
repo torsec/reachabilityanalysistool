@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>testPolicy</PolicyName>
+<PolicyType>FILTERING</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+<Rule Action="ALLOW" Label="R0">
+<ExternalDataValue>0</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.87</Selector>
+<Selector Label="Destination Address">10.0.255.27-10.0.255.77;10.0.255.162-10.0.255.205</Selector>
+<Selector Label="Source Port">35254-35993</Selector>
+<Selector Label="Destination Port">1544-1564;25661-26369;64164-64938</Selector>
+<Selector Label="Protocol">ICMP;GGP;TCP;CBT;NVP-II;PUP;EMCON;XNET;UDP;MUX;DCN-MEAS;XNS-IDP;LEAF-1;MERIT-INP;DDP;MHRP;BNA;I-NLSP;SWIPE;MOBILE;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.89-10.0.0.120;10.0.0.124-10.0.0.198</Selector>
+<Selector Label="Destination Address">10.0.255.106-10.0.255.107;10.0.255.159-10.0.255.216</Selector>
+<Selector Label="Source Port">40264-40622;46337-46752;50359-50460</Selector>
+<Selector Label="Destination Port">12765-13205;62282-62882</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;ST;TCP;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;EMCON;XNET;CHAOS;UDP;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;IRTP;ISO-TP4;NETBLT;DCCP;3PC;IDPR;XTP;DDP;IL;IPv6;SDRP;IPv6-Route;IDRP;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R2">
+<ExternalDataValue>2</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.145</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.124;10.0.255.142-10.0.255.255</Selector>
+<Selector Label="Source Port">38462-39244;63140-63991</Selector>
+<Selector Label="Destination Port">8491-8666;21617-21839;50185-50805</Selector>
+<Selector Label="Protocol">IGMP;IP;CBT;EGP;BBN-RCC-MON;NVP-II;EMCON;XNET;MUX;HMP;LEAF-1;RDP;MERIT-INP;DCCP;3PC;IDPR;XTP;DDP;IDPR-CMTP;IPv6;SDRP;IPv6-Route;IPv6-Frag;MHRP;ESP;AH;MOBILE;TLSP;SKIP;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R3">
+<ExternalDataValue>3</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.16-10.0.0.16;10.0.0.44-10.0.0.51;10.0.0.64-10.0.0.70;10.0.0.81-10.0.0.89;10.0.0.100-10.0.0.125;10.0.0.155-10.0.0.193;10.0.0.253-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.68;10.0.255.82-10.0.255.124;10.0.255.130-10.0.255.165;10.0.255.199-10.0.255.248</Selector>
+<Selector Label="Source Port">16577-16871;48097-48348;53085-53300</Selector>
+<Selector Label="Destination Port">13570-14074;15815-16456</Selector>
+<Selector Label="Protocol">CBT;EGP;PUP;ARGUS;MUX;DCCP;3PC;IPv6-Frag;RSVP;MHRP;AH;I-NLSP;SWIPE;NARP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R4">
+<ExternalDataValue>4</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.10-10.0.0.24;10.0.0.49-10.0.0.97;10.0.0.110-10.0.0.127</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.188;10.0.255.212-10.0.255.241</Selector>
+<Selector Label="Source Port">5558-5885;26941-27083;52202-52554</Selector>
+<Selector Label="Destination Port">6242-6986;50348-50742</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IP;ST;EGP;NVP-II;ARGUS;EMCON;XNET;CHAOS;MUX;DCN-MEAS;TRUNK-1;RDP;NETBLT;IDPR;XTP;DDP;TP++;IL;IPv6;RSVP;SWIPE;SKIP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R5">
+<ExternalDataValue>5</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.94;10.0.0.145-10.0.0.174</Selector>
+<Selector Label="Destination Address">10.0.255.8-10.0.255.124</Selector>
+<Selector Label="Source Port">36677-37015</Selector>
+<Selector Label="Destination Port">13832-14349;15555-15766;23782-24518</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;ST;NVP-II;HMP;PRM;IRTP;ISO-TP4;MFE-NSP;IDPR-CMTP;NARP;MOBILE;SKIP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R6">
+<ExternalDataValue>6</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.12-10.0.0.101;10.0.0.109-10.0.0.129</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.49;10.0.255.58-10.0.255.101</Selector>
+<Selector Label="Source Port">786-815;6719-7217;40461-40847</Selector>
+<Selector Label="Destination Port">15455-15945;20884-21618</Selector>
+<Selector Label="Protocol">IGP;PUP;EMCON;LEAF-1;LEAF-2;3PC;IPv6;SDRP;IPv6-Frag;ESP;AH;IPv6-ICMP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R7">
+<ExternalDataValue>7</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.123</Selector>
+<Selector Label="Destination Address">10.0.255.179-10.0.255.210</Selector>
+<Selector Label="Source Port">14371-14792;33979-34705;46426-46773</Selector>
+<Selector Label="Destination Port">6704-7243;30870-31513</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;ST;CBT;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;CHAOS;UDP;MUX;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;NETBLT;MFE-NSP;DCCP;IDPR;DDP;IDPR-CMTP;IL;IPv6;SDRP;IPv6-Route;IDRP;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;NARP;MOBILE;SKIP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R8">
+<ExternalDataValue>8</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.85;10.0.0.94-10.0.0.160;10.0.0.168-10.0.0.206</Selector>
+<Selector Label="Destination Address">10.0.255.2-10.0.255.83;10.0.255.227-10.0.255.255</Selector>
+<Selector Label="Source Port">48019-48031</Selector>
+<Selector Label="Destination Port">840-976;2933-3033;8978-9346</Selector>
+<Selector Label="Protocol">GGP;IP;TCP;CBT;EGP;ARGUS;UDP;DCN-MEAS;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;NETBLT;DCCP;IDPR;XTP;DDP;IDPR-CMTP;TP++;GRE;MHRP;AH;I-NLSP;SWIPE;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R9">
+<ExternalDataValue>9</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.8-10.0.0.90;10.0.0.126-10.0.0.146</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.11;10.0.255.23-10.0.255.45;10.0.255.80-10.0.255.132</Selector>
+<Selector Label="Source Port">2265-2740;7060-7062;41702-41836</Selector>
+<Selector Label="Destination Port">17209-17313;36253-36646;45908-46199</Selector>
+<Selector Label="Protocol">IPv6-Frag;BNA</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R10">
+<ExternalDataValue>10</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.34;10.0.0.48-10.0.0.55;10.0.0.103-10.0.0.134;10.0.0.172-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.11-10.0.255.236</Selector>
+<Selector Label="Source Port">582-1285;62916-63514</Selector>
+<Selector Label="Destination Port">7212-7581;49839-49902</Selector>
+<Selector Label="Protocol">ICMP;GGP;IP;EGP;IGP;BBN-RCC-MON;EMCON;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;RDP;IRTP;NETBLT;MERIT-INP;DCCP;IDPR;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IDRP;RSVP;GRE;MHRP;BNA;ESP;MOBILE;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R11">
+<ExternalDataValue>11</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.158;10.0.0.167-10.0.0.215</Selector>
+<Selector Label="Destination Address">10.0.255.15-10.0.255.86;10.0.255.129-10.0.255.167</Selector>
+<Selector Label="Source Port">24102-24430;58422-58662</Selector>
+<Selector Label="Destination Port">10149-10617</Selector>
+<Selector Label="Protocol">IGMP;IP;ST;TCP;EGP;IGP;BBN-RCC-MON;NVP-II;XNET;UDP;MUX;HMP;PRM;TRUNK-1;IRTP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;3PC;XTP;DDP;IDPR-CMTP;TP++;IPv6-Route;IPv6-Frag;ESP;SWIPE;SKIP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R12">
+<ExternalDataValue>12</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.9-10.0.0.20;10.0.0.24-10.0.0.53</Selector>
+<Selector Label="Destination Address">10.0.255.14-10.0.255.255</Selector>
+<Selector Label="Source Port">41658-41882</Selector>
+<Selector Label="Destination Port">15511-16016</Selector>
+<Selector Label="Protocol">MUX;XTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R13">
+<ExternalDataValue>13</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.37-10.0.0.70;10.0.0.183-10.0.0.192</Selector>
+<Selector Label="Destination Address">10.0.255.26-10.0.255.219;10.0.255.254-10.0.255.255</Selector>
+<Selector Label="Source Port">2217-2945;46758-47058;47978-48090</Selector>
+<Selector Label="Destination Port">8066-8267;48873-49314</Selector>
+<Selector Label="Protocol">IGMP;IGP;BBN-RCC-MON;NVP-II;ARGUS;UDP;XNS-IDP;TRUNK-2;LEAF-1;LEAF-2;ISO-TP4;NETBLT;DCCP;IDPR;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Frag;BNA;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R14">
+<ExternalDataValue>14</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.5-10.0.0.57;10.0.0.62-10.0.0.88;10.0.0.113-10.0.0.150;10.0.0.186-10.0.0.195</Selector>
+<Selector Label="Destination Address">10.0.255.7-10.0.255.59;10.0.255.77-10.0.255.107;10.0.255.217-10.0.255.242</Selector>
+<Selector Label="Source Port">14236-14308;52479-52798;61687-61779</Selector>
+<Selector Label="Destination Port">24315-24345;25456-26102</Selector>
+<Selector Label="Protocol">IP;NVP-II;PRM;IRTP;IPv6-Route;ESP;AH;NARP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R15">
+<ExternalDataValue>15</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.55;10.0.0.82-10.0.0.154</Selector>
+<Selector Label="Destination Address">10.0.255.9-10.0.255.137;10.0.255.160-10.0.255.215</Selector>
+<Selector Label="Source Port">45293-45407;59176-59767;62662-63252</Selector>
+<Selector Label="Destination Port">13794-14178;38274-39003</Selector>
+<Selector Label="Protocol">IGMP;IP;ST;TCP;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-2;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;3PC;XTP;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R16">
+<ExternalDataValue>16</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.17-10.0.0.106;10.0.0.166-10.0.0.210;10.0.0.247-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.46-10.0.255.74;10.0.255.225-10.0.255.243</Selector>
+<Selector Label="Source Port">19649-19768</Selector>
+<Selector Label="Destination Port">45735-46184</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IP;TCP;NVP-II;ARGUS;EMCON;XNET;CHAOS;TRUNK-2;LEAF-1;DCCP;DDP;TP++;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;GRE;I-NLSP;SKIP;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R17">
+<ExternalDataValue>17</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.17-10.0.0.114;10.0.0.117-10.0.0.213;10.0.0.252-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.7-10.0.255.79;10.0.255.85-10.0.255.139;10.0.255.141-10.0.255.255</Selector>
+<Selector Label="Source Port">40684-41293;43544-43900</Selector>
+<Selector Label="Destination Port">12682-13320;37150-37595</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;GGP;ST;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;MUX;DCN-MEAS;PRM;XNS-IDP;TRUNK-2;LEAF-1;RDP;IRTP;NETBLT;MERIT-INP;DCCP;3PC;XTP;DDP;IDPR-CMTP;TP++;SDRP;IPv6-Route;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;TLSP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R18">
+<ExternalDataValue>18</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.6-10.0.0.62;10.0.0.148-10.0.0.210;10.0.0.242-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.17-10.0.255.57;10.0.255.255-10.0.255.255</Selector>
+<Selector Label="Source Port">1832-2093;14404-15072</Selector>
+<Selector Label="Destination Port">3638-4228;60815-61152;62905-63364</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;EGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;XNET;UDP;XNS-IDP;TRUNK-1;LEAF-2;IRTP;NETBLT;3PC;XTP;IPv6;SDRP;IPv6-Frag;MHRP;BNA;I-NLSP;SWIPE;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R19">
+<ExternalDataValue>19</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.16-10.0.0.25;10.0.0.31-10.0.0.82;10.0.0.215-10.0.0.242</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.99;10.0.255.110-10.0.255.156</Selector>
+<Selector Label="Source Port">36552-37199</Selector>
+<Selector Label="Destination Port">3656-3908</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;ST;EGP;PUP;ARGUS;EMCON;CHAOS;UDP;MUX;DCN-MEAS;PRM;XNS-IDP;TRUNK-2;RDP;IRTP;ISO-TP4;MFE-NSP;XTP;DDP;IDPR-CMTP;TP++;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-ICMP;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R20">
+<ExternalDataValue>20</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.14-10.0.0.42;10.0.0.55-10.0.0.79;10.0.0.101-10.0.0.196;10.0.0.206-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.9;10.0.255.108-10.0.255.211;10.0.255.220-10.0.255.255</Selector>
+<Selector Label="Source Port">301-666;7614-7941;43076-43334</Selector>
+<Selector Label="Destination Port">27709-27806;33935-34606</Selector>
+<Selector Label="Protocol">IP;EGP;IGP;NVP-II;PUP;ARGUS;XNET;CHAOS;UDP;XNS-IDP;TRUNK-1;LEAF-2;NETBLT;MFE-NSP;MERIT-INP;3PC;DDP;IDPR-CMTP;IPv6-Route;IPv6-Frag;IDRP;GRE;BNA;AH;I-NLSP;SWIPE;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R21">
+<ExternalDataValue>21</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.13-10.0.0.87;10.0.0.197-10.0.0.207;10.0.0.252-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.12-10.0.255.31;10.0.255.69-10.0.255.115;10.0.255.122-10.0.255.162;10.0.255.194-10.0.255.234</Selector>
+<Selector Label="Source Port">5193-5913</Selector>
+<Selector Label="Destination Port">2059-2657;52660-53317</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;ST;CBT;PUP;CHAOS;XNS-IDP;LEAF-1;RDP;IRTP;ISO-TP4;MERIT-INP;DCCP;3PC;XTP;DDP;IDPR-CMTP;IL;SDRP;IPv6-Frag;IDRP;GRE;MHRP;I-NLSP;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R22">
+<ExternalDataValue>22</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.203;10.0.0.218-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.93;10.0.255.122-10.0.255.211;10.0.255.237-10.0.255.254</Selector>
+<Selector Label="Source Port">48142-48495</Selector>
+<Selector Label="Destination Port">8290-8644;60470-60713;64658-65255</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGP;NVP-II;XNET;CHAOS;DCN-MEAS;HMP;LEAF-2;MERIT-INP;DCCP;3PC;IDPR;DDP;IDPR-CMTP;TP++;SDRP;IPv6-Frag;RSVP;GRE;BNA;ESP;AH;NARP;MOBILE;IPv6-NoNxt;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R23">
+<ExternalDataValue>23</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.5-10.0.0.97;10.0.0.102-10.0.0.150;10.0.0.152-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.74-10.0.255.111;10.0.255.187-10.0.255.221</Selector>
+<Selector Label="Source Port">30995-31257;41976-42376;63473-63527</Selector>
+<Selector Label="Destination Port">23675-23705;30324-30523;48180-48844</Selector>
+<Selector Label="Protocol">GGP;EMCON;IPv6-ICMP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R24">
+<ExternalDataValue>24</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.231</Selector>
+<Selector Label="Destination Address">10.0.255.50-10.0.255.63;10.0.255.124-10.0.255.149;10.0.255.204-10.0.255.213</Selector>
+<Selector Label="Source Port">10494-10771;11308-11716</Selector>
+<Selector Label="Destination Port">36293-36420</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;ST;TCP;IGP;NVP-II;ARGUS;EMCON;CHAOS;UDP;DCN-MEAS;HMP;PRM;TRUNK-1;LEAF-1;LEAF-2;IRTP;ISO-TP4;NETBLT;DCCP;3PC;IDPR;XTP;IDPR-CMTP;IL;IPv6;SDRP;RSVP;GRE;MHRP;BNA;I-NLSP;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R25">
+<ExternalDataValue>25</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.24;10.0.0.93-10.0.0.129;10.0.0.137-10.0.0.137;10.0.0.167-10.0.0.183;10.0.0.208-10.0.0.209;10.0.0.226-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.15;10.0.255.20-10.0.255.163;10.0.255.236-10.0.255.248</Selector>
+<Selector Label="Source Port">18815-18997;33037-33592;48581-49272</Selector>
+<Selector Label="Destination Port">39178-39876</Selector>
+<Selector Label="Protocol">TCP;UDP;3PC;DDP;SWIPE;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R26">
+<ExternalDataValue>26</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.57;10.0.0.90-10.0.0.149;10.0.0.160-10.0.0.199;10.0.0.203-10.0.0.229</Selector>
+<Selector Label="Destination Address">10.0.255.18-10.0.255.34;10.0.255.37-10.0.255.84;10.0.255.216-10.0.255.229</Selector>
+<Selector Label="Source Port">9481-9771</Selector>
+<Selector Label="Destination Port">54463-55260;55816-56182</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;GGP;IP;ST;TCP;IGP;BBN-RCC-MON;XNET;CHAOS;UDP;MUX;PRM;XNS-IDP;TRUNK-1;LEAF-1;IRTP;NETBLT;MFE-NSP;MERIT-INP;IDPR;XTP;IDPR-CMTP;SDRP;IPv6-Route;BNA;ESP;AH;I-NLSP;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R27">
+<ExternalDataValue>27</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.124-10.0.0.149;10.0.0.241-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.8-10.0.255.255</Selector>
+<Selector Label="Source Port">8050-8122;62817-63067</Selector>
+<Selector Label="Destination Port">7673-8115;21497-21969;38480-39070</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;GGP;IP;ST;TCP;CBT;BBN-RCC-MON;NVP-II;ARGUS;XNET;CHAOS;UDP;MUX;HMP;PRM;TRUNK-1;LEAF-1;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;IDPR;TP++;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;ESP;I-NLSP;NARP;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R28">
+<ExternalDataValue>28</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.58-10.0.0.112;10.0.0.164-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.112;10.0.255.120-10.0.255.227;10.0.255.244-10.0.255.255</Selector>
+<Selector Label="Source Port">12920-13596;20126-20335;25789-26250</Selector>
+<Selector Label="Destination Port">4310-4903;61372-61852</Selector>
+<Selector Label="Protocol">ICMP;ST;CBT;ARGUS;TRUNK-1;IL;MHRP;MOBILE;IPv6-ICMP;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R29">
+<ExternalDataValue>29</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.21-10.0.0.22;10.0.0.169-10.0.0.194</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.58;10.0.255.114-10.0.255.161;10.0.255.192-10.0.255.240</Selector>
+<Selector Label="Source Port">22927-23525</Selector>
+<Selector Label="Destination Port">58341-58573</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;GGP;IP;CBT;EGP;IGP;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-2;RDP;NETBLT;DCCP;3PC;IDPR;XTP;DDP;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R30">
+<ExternalDataValue>30</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.13-10.0.0.59;10.0.0.63-10.0.0.110</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.122;10.0.255.172-10.0.255.199;10.0.255.203-10.0.255.243;10.0.255.246-10.0.255.255</Selector>
+<Selector Label="Source Port">13339-13683;19619-19789</Selector>
+<Selector Label="Destination Port">24358-24817;54973-55401</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;TCP;CBT;IGP;ARGUS;XNET;CHAOS;MUX;HMP;LEAF-1;LEAF-2;IRTP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;XTP;DDP;TP++;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;BNA;ESP;SWIPE;NARP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R31">
+<ExternalDataValue>31</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.114;10.0.0.128-10.0.0.174</Selector>
+<Selector Label="Destination Address">10.0.255.25-10.0.255.38;10.0.255.244-10.0.255.255</Selector>
+<Selector Label="Source Port">2845-3074</Selector>
+<Selector Label="Destination Port">27024-27519</Selector>
+<Selector Label="Protocol">ICMP;IGMP;CHAOS;UDP;LEAF-1;RDP;IPv6;BNA;ESP;SWIPE;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R32">
+<ExternalDataValue>32</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.2;10.0.0.7-10.0.0.119;10.0.0.153-10.0.0.227;10.0.0.255-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.24-10.0.255.237</Selector>
+<Selector Label="Source Port">12090-12405;50504-50889</Selector>
+<Selector Label="Destination Port">16559-16684;17660-18448;29564-30107</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;GGP;IP;ST;TCP;CBT;IGP;NVP-II;PUP;EMCON;XNET;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;DCCP;3PC;DDP;TP++;IPv6;SDRP;IPv6-Frag;GRE;MHRP;BNA;I-NLSP;SWIPE;NARP;SKIP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R33">
+<ExternalDataValue>33</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.12-10.0.0.24;10.0.0.74-10.0.0.178</Selector>
+<Selector Label="Destination Address">10.0.255.4-10.0.255.41;10.0.255.48-10.0.255.136;10.0.255.191-10.0.255.255</Selector>
+<Selector Label="Source Port">60500-60741;63632-63836</Selector>
+<Selector Label="Destination Port">13437-13754;40752-40985;52988-53036</Selector>
+<Selector Label="Protocol">IGMP;ARGUS;XNET;CHAOS;DCN-MEAS;IRTP;NETBLT;DCCP;3PC;XTP;DDP;IDPR-CMTP;IPv6;IPv6-Route;IDRP;RSVP;MHRP;ESP;AH;I-NLSP;NARP;TLSP;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R34">
+<ExternalDataValue>34</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.27;10.0.0.81-10.0.0.106;10.0.0.138-10.0.0.169</Selector>
+<Selector Label="Destination Address">10.0.255.3-10.0.255.46;10.0.255.49-10.0.255.61;10.0.255.115-10.0.255.231</Selector>
+<Selector Label="Source Port">31492-31519</Selector>
+<Selector Label="Destination Port">5552-5897;24413-24440;44647-44674</Selector>
+<Selector Label="Protocol">IP;IGP;BBN-RCC-MON;XNET;UDP;LEAF-1;LEAF-2;IPv6;IPv6-ICMP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R35">
+<ExternalDataValue>35</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.5-10.0.0.206;10.0.0.211-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.27-10.0.255.46;10.0.255.54-10.0.255.71;10.0.255.239-10.0.255.244;10.0.255.246-10.0.255.248</Selector>
+<Selector Label="Source Port">1473-1908</Selector>
+<Selector Label="Destination Port">1071-1397</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;ST;EGP;IGP;BBN-RCC-MON;PUP;ARGUS;EMCON;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-2;ISO-TP4;MERIT-INP;DCCP;TP++;IL;IPv6;SDRP;IPv6-Route;GRE;BNA;AH;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R36">
+<ExternalDataValue>36</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.118;10.0.0.220-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.3-10.0.255.169;10.0.255.207-10.0.255.214</Selector>
+<Selector Label="Source Port">13112-13788;38568-39161;49559-50171</Selector>
+<Selector Label="Destination Port">2267-2681;25030-25549;40229-40319</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;CBT;EGP;XNET;CHAOS;MUX;DCN-MEAS;XNS-IDP;TRUNK-1;TRUNK-2;IRTP;MFE-NSP;MERIT-INP;DCCP;3PC;XTP;DDP;GRE;ESP;SWIPE;TLSP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R37">
+<ExternalDataValue>37</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.10-10.0.0.48;10.0.0.69-10.0.0.192</Selector>
+<Selector Label="Destination Address">10.0.255.16-10.0.255.138;10.0.255.147-10.0.255.184</Selector>
+<Selector Label="Source Port">46355-46832</Selector>
+<Selector Label="Destination Port">14877-15195;34607-34661</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;ST;EGP;IGP;BBN-RCC-MON;PUP;EMCON;XNET;CHAOS;UDP;HMP;XNS-IDP;TRUNK-2;LEAF-2;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;3PC;IDPR;XTP;DDP;IL;IPv6;SDRP;IPv6-Route;IDRP;GRE;MHRP;ESP;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R38">
+<ExternalDataValue>38</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.133;10.0.0.210-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.53;10.0.255.172-10.0.255.229</Selector>
+<Selector Label="Source Port">24535-24969;47118-47689</Selector>
+<Selector Label="Destination Port">46708-47361;60401-60941</Selector>
+<Selector Label="Protocol">XNET;CHAOS;UDP;MUX;PRM;RDP;ISO-TP4;DCCP;3PC;TP++;SDRP;GRE;MHRP;BNA;SKIP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R39">
+<ExternalDataValue>39</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.196;10.0.0.221-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.32-10.0.255.40;10.0.255.64-10.0.255.180</Selector>
+<Selector Label="Source Port">64445-64687</Selector>
+<Selector Label="Destination Port">42160-42710</Selector>
+<Selector Label="Protocol">ICMP;TCP;PUP;EMCON;MUX;DCN-MEAS;NETBLT;RSVP;MHRP;AH;I-NLSP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R40">
+<ExternalDataValue>40</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.150;10.0.0.183-10.0.0.186</Selector>
+<Selector Label="Destination Address">10.0.255.47-10.0.255.94;10.0.255.133-10.0.255.181;10.0.255.204-10.0.255.248</Selector>
+<Selector Label="Source Port">26008-26502;27744-28282;51076-51469</Selector>
+<Selector Label="Destination Port">14999-15211;25300-25388;43973-44160</Selector>
+<Selector Label="Protocol">CBT;EGP;IGP;EMCON;UDP;TRUNK-1;LEAF-2;IDPR;DDP;TP++;IPv6-Frag;MHRP;AH;I-NLSP;SKIP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R41">
+<ExternalDataValue>41</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.13;10.0.0.20-10.0.0.69;10.0.0.89-10.0.0.93;10.0.0.206-10.0.0.238</Selector>
+<Selector Label="Destination Address">10.0.255.66-10.0.255.165;10.0.255.195-10.0.255.235</Selector>
+<Selector Label="Source Port">64887-65116</Selector>
+<Selector Label="Destination Port">14823-14902</Selector>
+<Selector Label="Protocol">ICMP;TCP;CBT;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;LEAF-1;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;MERIT-INP;3PC;IDPR;IDPR-CMTP;TP++;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;AH;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R42">
+<ExternalDataValue>42</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.48;10.0.0.76-10.0.0.87;10.0.0.119-10.0.0.156</Selector>
+<Selector Label="Destination Address">10.0.255.32-10.0.255.40;10.0.255.44-10.0.255.65</Selector>
+<Selector Label="Source Port">16616-17021;47938-48397</Selector>
+<Selector Label="Destination Port">9356-9475;14068-14375;14777-15028</Selector>
+<Selector Label="Protocol">ICMP;GGP;IP;ST;TCP;EGP;NVP-II;PUP;ARGUS;EMCON;CHAOS;UDP;DCN-MEAS;PRM;XNS-IDP;LEAF-1;LEAF-2;RDP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;DCCP;DDP;IPv6;SDRP;IPv6-Frag;IDRP;GRE;ESP;AH;I-NLSP;SWIPE;NARP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R43">
+<ExternalDataValue>43</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.25-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.28-10.0.255.100;10.0.255.143-10.0.255.251</Selector>
+<Selector Label="Source Port">12066-12708;29029-29362;45264-45863</Selector>
+<Selector Label="Destination Port">24798-25245</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;CBT;EGP;IGP;BBN-RCC-MON;PUP;ARGUS;XNET;CHAOS;UDP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;RDP;NETBLT;MFE-NSP;MERIT-INP;DCCP;IDPR;XTP;TP++;SDRP;IPv6-Route;IPv6-Frag;IDRP;GRE;MHRP;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R44">
+<ExternalDataValue>44</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.32-10.0.0.92;10.0.0.99-10.0.0.124;10.0.0.177-10.0.0.222</Selector>
+<Selector Label="Destination Address">10.0.255.2-10.0.255.229;10.0.255.250-10.0.255.255</Selector>
+<Selector Label="Source Port">10624-10758;17648-18118;34812-35134</Selector>
+<Selector Label="Destination Port">15464-15570;53092-53813</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IP;ST;UDP;DCN-MEAS;TRUNK-1;TRUNK-2;ISO-TP4;MFE-NSP;MERIT-INP;XTP;DDP;IDPR-CMTP;IL;BNA;AH;SWIPE;SKIP;IPv6-ICMP;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R45">
+<ExternalDataValue>45</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.76;10.0.0.78-10.0.0.118</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.54;10.0.255.105-10.0.255.115</Selector>
+<Selector Label="Source Port">27474-28049;32181-32808</Selector>
+<Selector Label="Destination Port">16645-17036;17961-18638;51385-51680</Selector>
+<Selector Label="Protocol">ICMP;GGP;IP;ST;CBT;IGP;BBN-RCC-MON;NVP-II;PUP;UDP;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;RDP;NETBLT;MFE-NSP;XTP;IDPR-CMTP;TP++;IL;IPv6;SDRP;RSVP;MHRP;ESP;AH;I-NLSP;NARP;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R46">
+<ExternalDataValue>46</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.36;10.0.0.50-10.0.0.73;10.0.0.85-10.0.0.128;10.0.0.199-10.0.0.220;10.0.0.228-10.0.0.242</Selector>
+<Selector Label="Destination Address">10.0.255.9-10.0.255.118;10.0.255.228-10.0.255.255</Selector>
+<Selector Label="Source Port">1314-2043</Selector>
+<Selector Label="Destination Port">11912-12056;45013-45027</Selector>
+<Selector Label="Protocol">XNET;HMP;RDP;XTP;RSVP;BNA;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R47">
+<ExternalDataValue>47</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.35</Selector>
+<Selector Label="Destination Address">10.0.255.193-10.0.255.208</Selector>
+<Selector Label="Source Port">6511-6713;30711-31271;54242-54843</Selector>
+<Selector Label="Destination Port">27292-28014</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;ST;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;XNET;CHAOS;UDP;MUX;HMP;XNS-IDP;TRUNK-1;LEAF-1;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;MERIT-INP;DCCP;3PC;IDPR;TP++;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R48">
+<ExternalDataValue>48</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.46;10.0.0.249-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.3-10.0.255.122;10.0.255.126-10.0.255.222</Selector>
+<Selector Label="Source Port">58545-59262;63741-64540</Selector>
+<Selector Label="Destination Port">20322-20689</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IP;ST;TCP;CBT;BBN-RCC-MON;NVP-II;PUP;EMCON;CHAOS;UDP;DCN-MEAS;HMP;LEAF-1;LEAF-2;RDP;IRTP;NETBLT;MFE-NSP;MERIT-INP;DCCP;IDPR;XTP;DDP;IDPR-CMTP;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;NARP;MOBILE;TLSP;SKIP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R49">
+<ExternalDataValue>49</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.5-10.0.0.128;10.0.0.214-10.0.0.248</Selector>
+<Selector Label="Destination Address">10.0.255.135-10.0.255.142;10.0.255.250-10.0.255.255</Selector>
+<Selector Label="Source Port">14483-14684;38833-39580;44442-45058</Selector>
+<Selector Label="Destination Port">25830-25909</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;TCP;CBT;EGP;IGP;NVP-II;PUP;EMCON;CHAOS;MUX;DCN-MEAS;PRM;TRUNK-1;LEAF-1;LEAF-2;ISO-TP4;NETBLT;IDPR;XTP;DDP;IDPR-CMTP;TP++;IPv6;SDRP;GRE;MHRP;ESP;I-NLSP;MOBILE;TLSP;SKIP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R50">
+<ExternalDataValue>50</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.8-10.0.0.36;10.0.0.71-10.0.0.74;10.0.0.255-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.9;10.0.255.13-10.0.255.120</Selector>
+<Selector Label="Source Port">16071-16185</Selector>
+<Selector Label="Destination Port">23441-23773;55692-56307;59260-59934</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;GGP;IP;ST;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-2;RDP;ISO-TP4;NETBLT;3PC;IDPR;XTP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;MHRP;BNA;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R51">
+<ExternalDataValue>51</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.85;10.0.0.90-10.0.0.162;10.0.0.235-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.26-10.0.255.115;10.0.255.186-10.0.255.255</Selector>
+<Selector Label="Source Port">64661-65235</Selector>
+<Selector Label="Destination Port">717-744;1680-1717;55148-55668</Selector>
+<Selector Label="Protocol">ST;XNET;TRUNK-1;ISO-TP4;MFE-NSP;MERIT-INP;IPv6;IDRP;RSVP;ESP;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R52">
+<ExternalDataValue>52</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.8;10.0.0.39-10.0.0.68;10.0.0.93-10.0.0.135;10.0.0.238-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.30;10.0.255.74-10.0.255.127;10.0.255.151-10.0.255.196;10.0.255.248-10.0.255.255</Selector>
+<Selector Label="Source Port">44582-45359</Selector>
+<Selector Label="Destination Port">13774-14524;47826-48120</Selector>
+<Selector Label="Protocol">ST;UDP;HMP;ISO-TP4;3PC;NARP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R53">
+<ExternalDataValue>53</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.6;10.0.0.46-10.0.0.56</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.19;10.0.255.96-10.0.255.143;10.0.255.192-10.0.255.220</Selector>
+<Selector Label="Source Port">5084-5475;13873-14115;43151-43759</Selector>
+<Selector Label="Destination Port">9180-9370;46689-47485</Selector>
+<Selector Label="Protocol">ST;TCP;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;EMCON;XNET;MUX;DCN-MEAS;TRUNK-1;LEAF-1;RDP;IRTP;ISO-TP4;NETBLT;MERIT-INP;3PC;XTP;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IDRP;GRE;BNA;ESP;AH;I-NLSP;SWIPE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R54">
+<ExternalDataValue>54</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.38-10.0.0.41;10.0.0.47-10.0.0.93;10.0.0.147-10.0.0.210;10.0.0.212-10.0.0.225</Selector>
+<Selector Label="Destination Address">10.0.255.79-10.0.255.124</Selector>
+<Selector Label="Source Port">1913-2443;31459-32114;35799-35801</Selector>
+<Selector Label="Destination Port">32688-32816;41470-41919</Selector>
+<Selector Label="Protocol">ICMP;IGMP;ST;TCP;CBT;EGP;NVP-II;PUP;EMCON;XNET;DCN-MEAS;PRM;TRUNK-2;ISO-TP4;IDPR-CMTP;TP++;IPv6-Frag;IDRP;GRE;MHRP;BNA;ESP;SWIPE;TLSP;IPv6-NoNxt;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R55">
+<ExternalDataValue>55</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.189;10.0.255.201-10.0.255.255</Selector>
+<Selector Label="Source Port">59471-59639</Selector>
+<Selector Label="Destination Port">60499-60872</Selector>
+<Selector Label="Protocol">ICMP;GGP;IP;ST;TCP;CBT;EGP;PUP;ARGUS;EMCON;CHAOS;MUX;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-2;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;3PC;IDPR;XTP;DDP;IDPR-CMTP;TP++;IPv6;SDRP;IPv6-Route;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;IPv6-ICMP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R56">
+<ExternalDataValue>56</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.9-10.0.0.114;10.0.0.179-10.0.0.209;10.0.0.227-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.122;10.0.255.132-10.0.255.168;10.0.255.188-10.0.255.247;10.0.255.250-10.0.255.255</Selector>
+<Selector Label="Source Port">25138-25151</Selector>
+<Selector Label="Destination Port">19564-19948</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;ST;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;CHAOS;UDP;MUX;DCN-MEAS;HMP;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;DCCP;3PC;IDPR;XTP;DDP;IDPR-CMTP;TP++;IL;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;ESP;I-NLSP;SWIPE;MOBILE;TLSP;SKIP;IPv6-NoNxt;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R57">
+<ExternalDataValue>57</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.27-10.0.0.35;10.0.0.45-10.0.0.93;10.0.0.195-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.4-10.0.255.99;10.0.255.127-10.0.255.157;10.0.255.214-10.0.255.222</Selector>
+<Selector Label="Source Port">41356-41389;56609-57405;61211-61429</Selector>
+<Selector Label="Destination Port">63960-64412</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;GGP;ST;TCP;CBT;EGP;IGP;NVP-II;ARGUS;EMCON;CHAOS;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;3PC;XTP;DDP;IDPR-CMTP;IPv6;IPv6-Route;IPv6-Frag;RSVP;BNA;ESP;MOBILE;TLSP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R58">
+<ExternalDataValue>58</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.153-10.0.0.174</Selector>
+<Selector Label="Destination Address">10.0.255.3-10.0.255.202;10.0.255.219-10.0.255.255</Selector>
+<Selector Label="Source Port">23304-23938;57845-58147</Selector>
+<Selector Label="Destination Port">47384-48100</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;CBT;IGP;NVP-II;PUP;EMCON;XNET;CHAOS;UDP;MUX;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;DCCP;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Frag;IDRP;RSVP;GRE;AH;SWIPE;NARP;TLSP;SKIP;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R59">
+<ExternalDataValue>59</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.50-10.0.0.63</Selector>
+<Selector Label="Destination Address">10.0.255.8-10.0.255.8;10.0.255.35-10.0.255.38;10.0.255.175-10.0.255.235</Selector>
+<Selector Label="Source Port">42689-43405;51230-51927;65049-65437</Selector>
+<Selector Label="Destination Port">38745-39008;55660-55822</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;ST;CBT;EGP;IGP;NVP-II;PUP;EMCON;MUX;PRM;XNS-IDP;TRUNK-1;LEAF-2;RDP;IRTP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;IDPR;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;ESP;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R60">
+<ExternalDataValue>60</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.5;10.0.0.10-10.0.0.49;10.0.0.58-10.0.0.83;10.0.0.113-10.0.0.203</Selector>
+<Selector Label="Destination Address">10.0.255.10-10.0.255.93;10.0.255.112-10.0.255.141;10.0.255.235-10.0.255.255</Selector>
+<Selector Label="Source Port">6212-6944</Selector>
+<Selector Label="Destination Port">59107-59888;62499-63142;65150-65400</Selector>
+<Selector Label="Protocol">BBN-RCC-MON;ARGUS;DCN-MEAS;XNS-IDP;RDP;IRTP;DDP;IDPR-CMTP;IDRP;BNA</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R61">
+<ExternalDataValue>61</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.12-10.0.0.131;10.0.0.138-10.0.0.147;10.0.0.206-10.0.0.230</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.255</Selector>
+<Selector Label="Source Port">45146-45699;59765-60522</Selector>
+<Selector Label="Destination Port">46982-47564;49849-50397</Selector>
+<Selector Label="Protocol">GGP;ST;TCP;IGP;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;DCN-MEAS;PRM;XNS-IDP;TRUNK-1;LEAF-1;LEAF-2;IRTP;ISO-TP4;MFE-NSP;DCCP;3PC;XTP;DDP;IL;IPv6;SDRP;MHRP;BNA;AH;I-NLSP;NARP;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R62">
+<ExternalDataValue>62</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.20;10.0.0.55-10.0.0.118</Selector>
+<Selector Label="Destination Address">10.0.255.34-10.0.255.112;10.0.255.141-10.0.255.216</Selector>
+<Selector Label="Source Port">32411-32731</Selector>
+<Selector Label="Destination Port">9814-10543;57289-57672;58840-59305</Selector>
+<Selector Label="Protocol">ICMP;ST;TCP;EGP;BBN-RCC-MON;DCN-MEAS;HMP;XNS-IDP;LEAF-2;RDP;ISO-TP4;MERIT-INP;DCCP;DDP;TP++;IPv6-Frag;IDRP;AH;SWIPE;IPv6-NoNxt;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R63">
+<ExternalDataValue>63</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.4;10.0.0.22-10.0.0.79;10.0.0.158-10.0.0.200</Selector>
+<Selector Label="Destination Address">10.0.255.12-10.0.255.71;10.0.255.190-10.0.255.243</Selector>
+<Selector Label="Source Port">21671-22173;31391-31763;63113-63200</Selector>
+<Selector Label="Destination Port">36108-36800;44857-45356;62760-62932</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;ST;CBT;IGP;EMCON;PRM;ISO-TP4;NETBLT;MERIT-INP;XTP;IDPR-CMTP;SDRP;IDRP;GRE;I-NLSP;SWIPE;SKIP;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R64">
+<ExternalDataValue>64</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.9-10.0.0.135;10.0.0.153-10.0.0.198;10.0.0.204-10.0.0.239;10.0.0.249-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.5;10.0.255.22-10.0.255.243;10.0.255.246-10.0.255.249;10.0.255.252-10.0.255.255</Selector>
+<Selector Label="Source Port">9975-10681;21097-21809</Selector>
+<Selector Label="Destination Port">42098-42448;48901-49280</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;ST;TCP;CBT;EGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;MUX;DCN-MEAS;PRM;XNS-IDP;TRUNK-2;RDP;IRTP;ISO-TP4;NETBLT;MFE-NSP;3PC;IDPR;DDP;IDPR-CMTP;IPv6-Route;RSVP;MHRP;ESP;AH;I-NLSP;NARP;TLSP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R65">
+<ExternalDataValue>65</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.152;10.0.0.173-10.0.0.222</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.9;10.0.255.26-10.0.255.43;10.0.255.103-10.0.255.110;10.0.255.167-10.0.255.218;10.0.255.223-10.0.255.231;10.0.255.241-10.0.255.255</Selector>
+<Selector Label="Source Port">56999-57250;57996-58248;64813-64962</Selector>
+<Selector Label="Destination Port">15550-15672</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;ST;TCP;CBT;EGP;BBN-RCC-MON;ARGUS;EMCON;XNET;CHAOS;UDP;DCN-MEAS;HMP;PRM;XNS-IDP;LEAF-2;RDP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;IDPR;XTP;DDP;IDPR-CMTP;IL;SDRP;IPv6-Frag;RSVP;GRE;BNA;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R66">
+<ExternalDataValue>66</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.30-10.0.0.75;10.0.0.152-10.0.0.164</Selector>
+<Selector Label="Destination Address">10.0.255.19-10.0.255.113;10.0.255.136-10.0.255.221</Selector>
+<Selector Label="Source Port">36036-36580;37750-38100;47631-47959</Selector>
+<Selector Label="Destination Port">43096-43452</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;EGP;IGP;BBN-RCC-MON;ARGUS;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;TRUNK-2;LEAF-1;LEAF-2;RDP;IRTP;NETBLT;MFE-NSP;DCCP;IDPR;XTP;DDP;IDPR-CMTP;IL;IPv6;BNA;ESP;AH;I-NLSP;TLSP;SKIP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R67">
+<ExternalDataValue>67</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.162;10.0.0.176-10.0.0.185</Selector>
+<Selector Label="Destination Address">10.0.255.0-10.0.255.200;10.0.255.211-10.0.255.255</Selector>
+<Selector Label="Source Port">10103-10296;31588-31660;42776-43428</Selector>
+<Selector Label="Destination Port">8059-8225;15957-16205</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;GGP;IP;ST;TCP;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-1;LEAF-2;IRTP;NETBLT;MFE-NSP;IDPR;XTP;DDP;IDPR-CMTP;TP++;IL;IPv6;IPv6-Route;IPv6-Frag;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;SKIP;IPv6-ICMP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R68">
+<ExternalDataValue>68</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.143;10.0.0.178-10.0.0.221</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.22</Selector>
+<Selector Label="Source Port">3887-4645;32893-33320</Selector>
+<Selector Label="Destination Port">8477-8680</Selector>
+<Selector Label="Protocol">ICMP;IGMP;CBT;XNS-IDP;LEAF-2;IDPR;XTP;IL;IPv6-Route;SWIPE</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R69">
+<ExternalDataValue>69</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.195</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.77;10.0.255.152-10.0.255.194;10.0.255.201-10.0.255.204;10.0.255.235-10.0.255.255</Selector>
+<Selector Label="Source Port">47395-47962;50031-50104;64974-65222</Selector>
+<Selector Label="Destination Port">27113-27436;38272-38788</Selector>
+<Selector Label="Protocol">IGMP;GGP;IP;TCP;CBT;IGP;BBN-RCC-MON;NVP-II;PUP;EMCON;XNET;UDP;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;DCCP;3PC;IDPR;DDP;IDPR-CMTP;IL;SDRP;IPv6-Route;IPv6-Frag;GRE;MHRP;BNA;ESP;AH;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R70">
+<ExternalDataValue>70</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.9-10.0.0.89;10.0.0.144-10.0.0.146;10.0.0.211-10.0.0.229</Selector>
+<Selector Label="Destination Address">10.0.255.71-10.0.255.123;10.0.255.196-10.0.255.239</Selector>
+<Selector Label="Source Port">537-935;27360-27833;37180-37448</Selector>
+<Selector Label="Destination Port">45191-45919</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;CBT;EGP;BBN-RCC-MON;NVP-II;ARGUS;XNET;CHAOS;UDP;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;LEAF-1;IRTP;ISO-TP4;MFE-NSP;DCCP;3PC;IDPR;DDP;IDPR-CMTP;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;RSVP;GRE;MHRP;ESP;AH;NARP;MOBILE;TLSP;SKIP;IPv6-NoNxt;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R71">
+<ExternalDataValue>71</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.44;10.0.0.49-10.0.0.75;10.0.0.119-10.0.0.137</Selector>
+<Selector Label="Destination Address">10.0.255.19-10.0.255.86;10.0.255.123-10.0.255.206</Selector>
+<Selector Label="Source Port">24524-24717</Selector>
+<Selector Label="Destination Port">2746-3228</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;TCP;CBT;BBN-RCC-MON;NVP-II;PUP;EMCON;XNET;CHAOS;MUX;DCN-MEAS;HMP;TRUNK-1;LEAF-2;ISO-TP4;NETBLT;DCCP;3PC;IDPR;XTP;IDPR-CMTP;IL;IPv6;SDRP;IPv6-Frag;IDRP;RSVP;GRE;MHRP;ESP;AH;I-NLSP;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R72">
+<ExternalDataValue>72</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.11-10.0.0.70;10.0.0.109-10.0.0.120;10.0.0.125-10.0.0.161;10.0.0.252-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.4-10.0.255.119;10.0.255.128-10.0.255.161</Selector>
+<Selector Label="Source Port">26653-26654;59377-59758</Selector>
+<Selector Label="Destination Port">57442-57796</Selector>
+<Selector Label="Protocol">HOPOPT;IGP;HMP;NETBLT;IPv6-Route;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R73">
+<ExternalDataValue>73</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.8-10.0.0.73;10.0.0.77-10.0.0.110;10.0.0.141-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.138-10.0.255.154</Selector>
+<Selector Label="Source Port">42448-43226</Selector>
+<Selector Label="Destination Port">14698-15211;41906-42669;65089-65535</Selector>
+<Selector Label="Protocol">GGP;ST;IGP;PUP;TRUNK-1;TRUNK-2;LEAF-2;RDP;DCCP;IDPR;TP++;IPv6-Route;RSVP;GRE;SWIPE;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R74">
+<ExternalDataValue>74</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.131;10.0.0.253-10.0.0.253</Selector>
+<Selector Label="Destination Address">10.0.255.76-10.0.255.125;10.0.255.243-10.0.255.255</Selector>
+<Selector Label="Source Port">1697-2127;4855-5615;63072-63350</Selector>
+<Selector Label="Destination Port">7063-7660;29210-29374;61661-61799</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;TCP;CBT;IGP;NVP-II;PUP;MUX;PRM;LEAF-2;DCCP;IDPR;XTP;TP++;IPv6;SDRP;BNA;SWIPE;NARP;MOBILE;IPv6-ICMP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R75">
+<ExternalDataValue>75</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.109-10.0.0.132;10.0.0.139-10.0.0.172;10.0.0.209-10.0.0.231</Selector>
+<Selector Label="Destination Address">10.0.255.9-10.0.255.225;10.0.255.229-10.0.255.239</Selector>
+<Selector Label="Source Port">50179-50440</Selector>
+<Selector Label="Destination Port">26826-27033;42118-42914</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;TCP;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;MUX;PRM;XNS-IDP;TRUNK-2;LEAF-1;RDP;ISO-TP4;MFE-NSP;MERIT-INP;DDP;IDPR-CMTP;IL;SDRP;IPv6-Route;IPv6-Frag;RSVP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R76">
+<ExternalDataValue>76</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.11-10.0.0.72;10.0.0.91-10.0.0.92;10.0.0.129-10.0.0.148;10.0.0.182-10.0.0.248</Selector>
+<Selector Label="Destination Address">10.0.255.21-10.0.255.125;10.0.255.192-10.0.255.239;10.0.255.251-10.0.255.255</Selector>
+<Selector Label="Source Port">20118-20486;30247-31009;40814-41487</Selector>
+<Selector Label="Destination Port">4201-4845;17771-18066;57708-58439</Selector>
+<Selector Label="Protocol">ICMP;IGMP;IP;BBN-RCC-MON;PUP;ARGUS;XNET;MUX;DCN-MEAS;XNS-IDP;TRUNK-1;LEAF-2;RDP;MFE-NSP;3PC;IDPR;IDPR-CMTP;IL;IPv6;SDRP;IPv6-Route;IDRP;BNA;I-NLSP;NARP;MOBILE;IPv6-ICMP;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R77">
+<ExternalDataValue>77</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.86;10.0.0.100-10.0.0.148;10.0.0.211-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.10-10.0.255.142;10.0.255.229-10.0.255.255</Selector>
+<Selector Label="Source Port">8438-9066;28206-28474</Selector>
+<Selector Label="Destination Port">7507-8129;21848-22033;43606-43927</Selector>
+<Selector Label="Protocol">ICMP;IGMP;IP;EGP;BBN-RCC-MON;PUP;EMCON;XNET;UDP;MUX;TRUNK-2;LEAF-2;NETBLT;3PC;TP++;SDRP;IPv6-Route;AH;SWIPE;NARP;IPv6-Opts</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R78">
+<ExternalDataValue>78</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.174</Selector>
+<Selector Label="Destination Address">10.0.255.137-10.0.255.142</Selector>
+<Selector Label="Source Port">53242-53668;55947-56576;65088-65535</Selector>
+<Selector Label="Destination Port">28389-28614</Selector>
+<Selector Label="Protocol">CBT;MUX;IDPR;TP++;SDRP;IPv6-Route</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R79">
+<ExternalDataValue>79</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.7;10.0.0.22-10.0.0.123;10.0.0.181-10.0.0.223</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.45;10.0.255.63-10.0.255.109</Selector>
+<Selector Label="Source Port">21366-21906;51748-52448</Selector>
+<Selector Label="Destination Port">19933-20609;59106-59799;62573-63310</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;GGP;IP;ST;TCP;CBT;BBN-RCC-MON;NVP-II;XNET;CHAOS;UDP;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;LEAF-1;RDP;IRTP;ISO-TP4;MERIT-INP;DCCP;IDPR;XTP;IDPR-CMTP;TP++;IL;IPv6;IPv6-Route;RSVP;GRE;MHRP;BNA;ESP;AH;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R80">
+<ExternalDataValue>80</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.72;10.0.0.134-10.0.0.157</Selector>
+<Selector Label="Destination Address">10.0.255.14-10.0.255.233</Selector>
+<Selector Label="Source Port">31679-31890;40361-40503</Selector>
+<Selector Label="Destination Port">28506-29104;31890-31977</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;ST;TCP;IGP;BBN-RCC-MON;EMCON;XNET;UDP;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;IRTP;ISO-TP4;NETBLT;MFE-NSP;IDPR;DDP;TP++;IL;SDRP;RSVP;GRE;MHRP;BNA;I-NLSP;SWIPE;MOBILE;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R81">
+<ExternalDataValue>81</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.2;10.0.0.13-10.0.0.112;10.0.0.138-10.0.0.174;10.0.0.182-10.0.0.218;10.0.0.228-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.14-10.0.255.38;10.0.255.46-10.0.255.76;10.0.255.82-10.0.255.121;10.0.255.215-10.0.255.238</Selector>
+<Selector Label="Source Port">53872-53878</Selector>
+<Selector Label="Destination Port">48330-48805</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;ST;TCP;CBT;EGP;BBN-RCC-MON;NVP-II;ARGUS;XNET;CHAOS;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;RDP;IRTP;MFE-NSP;MERIT-INP;DCCP;IDPR;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;MHRP;BNA;AH;SWIPE;NARP;MOBILE;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R82">
+<ExternalDataValue>82</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.39-10.0.0.52;10.0.0.60-10.0.0.77;10.0.0.92-10.0.0.124;10.0.0.129-10.0.0.129;10.0.0.187-10.0.0.228</Selector>
+<Selector Label="Destination Address">10.0.255.7-10.0.255.59;10.0.255.61-10.0.255.81;10.0.255.178-10.0.255.207</Selector>
+<Selector Label="Source Port">28796-28862;60637-60667</Selector>
+<Selector Label="Destination Port">1227-1454;13148-13345;36970-37756</Selector>
+<Selector Label="Protocol">GGP;CBT;PUP;EMCON;XNET;RDP;IRTP;ISO-TP4;NETBLT;MERIT-INP;DCCP;3PC;XTP;DDP;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;BNA;NARP;TLSP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R83">
+<ExternalDataValue>83</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.118;10.0.0.120-10.0.0.134;10.0.0.153-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.50-10.0.255.207;10.0.255.211-10.0.255.255</Selector>
+<Selector Label="Source Port">56758-57054;64164-64722</Selector>
+<Selector Label="Destination Port">65335-65386</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;IP;ST;TCP;CBT;EGP;IGP;NVP-II;PUP;ARGUS;EMCON;XNET;CHAOS;UDP;DCN-MEAS;HMP;XNS-IDP;TRUNK-1;LEAF-2;RDP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;IDPR;DDP;IDPR-CMTP;TP++;IL;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;BNA;ESP;AH;SWIPE;NARP;MOBILE;TLSP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R84">
+<ExternalDataValue>84</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.31;10.0.0.38-10.0.0.45;10.0.0.154-10.0.0.167;10.0.0.250-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.4-10.0.255.24;10.0.255.64-10.0.255.78;10.0.255.235-10.0.255.255</Selector>
+<Selector Label="Source Port">8506-9055</Selector>
+<Selector Label="Destination Port">44517-44608;52128-52887</Selector>
+<Selector Label="Protocol">HOPOPT;ST;TCP;NVP-II;ARGUS;EMCON;MUX;HMP;PRM;XNS-IDP;TRUNK-1;LEAF-1;LEAF-2;RDP;IRTP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;DCCP;TP++;IPv6;SDRP;IPv6-Route;IPv6-Frag;RSVP;GRE;BNA;ESP;SWIPE;NARP;SKIP;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R85">
+<ExternalDataValue>85</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.167;10.0.0.204-10.0.0.221</Selector>
+<Selector Label="Destination Address">10.0.255.6-10.0.255.224</Selector>
+<Selector Label="Source Port">16463-17165;29650-29861;48967-49447</Selector>
+<Selector Label="Destination Port">5598-5621;31448-31660;47357-47450</Selector>
+<Selector Label="Protocol">ICMP;EGP;PUP;ARGUS;CHAOS;TRUNK-1;LEAF-1;LEAF-2;ISO-TP4;MFE-NSP;MERIT-INP;IDPR-CMTP;TP++;IPv6;IPv6-Frag;MHRP;BNA;AH;I-NLSP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R86">
+<ExternalDataValue>86</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.17-10.0.0.25;10.0.0.34-10.0.0.45;10.0.0.136-10.0.0.178</Selector>
+<Selector Label="Destination Address">10.0.255.17-10.0.255.126;10.0.255.175-10.0.255.214;10.0.255.236-10.0.255.255</Selector>
+<Selector Label="Source Port">3331-3432;13560-13562;16295-16392</Selector>
+<Selector Label="Destination Port">7045-7800;17652-17836;38476-38668</Selector>
+<Selector Label="Protocol">HOPOPT;GGP;ST;CBT;PUP;XNET;CHAOS;UDP;MUX;HMP;TRUNK-1;TRUNK-2;LEAF-1;NETBLT;MFE-NSP;MERIT-INP;3PC;XTP;IL;IPv6;SDRP;IPv6-Route;IDRP;GRE;MHRP;BNA;AH;I-NLSP;SWIPE;IPv6-ICMP;IPv6-NoNxt;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R87">
+<ExternalDataValue>87</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.51;10.0.0.118-10.0.0.143;10.0.0.167-10.0.0.197;10.0.0.226-10.0.0.245</Selector>
+<Selector Label="Destination Address">10.0.255.3-10.0.255.57;10.0.255.61-10.0.255.130;10.0.255.150-10.0.255.198;10.0.255.234-10.0.255.255</Selector>
+<Selector Label="Source Port">14631-14699</Selector>
+<Selector Label="Destination Port">1025-1525</Selector>
+<Selector Label="Protocol">HOPOPT;IGMP;GGP;IP;ST;TCP;CBT;EGP;IGP;BBN-RCC-MON;PUP;ARGUS;EMCON;XNET;CHAOS;MUX;DCN-MEAS;HMP;PRM;XNS-IDP;TRUNK-2;RDP;IRTP;ISO-TP4;NETBLT;MFE-NSP;DCCP;DDP;IDPR-CMTP;TP++;IL;IDRP;RSVP;MHRP;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R88">
+<ExternalDataValue>88</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.205;10.0.0.216-10.0.0.254</Selector>
+<Selector Label="Destination Address">10.0.255.17-10.0.255.73;10.0.255.140-10.0.255.149</Selector>
+<Selector Label="Source Port">6920-7514;63000-63438</Selector>
+<Selector Label="Destination Port">24074-24531;56667-57280</Selector>
+<Selector Label="Protocol">HOPOPT;ST;EGP;BBN-RCC-MON;EMCON;XNET;UDP;DCN-MEAS;HMP;PRM;TRUNK-1;TRUNK-2;LEAF-2;ISO-TP4;MERIT-INP;IL;IPv6-Frag;RSVP;GRE;BNA;AH;NARP;MOBILE;TLSP;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R89">
+<ExternalDataValue>89</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.8-10.0.0.18;10.0.0.55-10.0.0.69;10.0.0.211-10.0.0.243</Selector>
+<Selector Label="Destination Address">10.0.255.34-10.0.255.58;10.0.255.67-10.0.255.84;10.0.255.120-10.0.255.185</Selector>
+<Selector Label="Source Port">12395-12823;33340-33791</Selector>
+<Selector Label="Destination Port">38704-38808;42764-43344;63664-64101</Selector>
+<Selector Label="Protocol">ICMP;GGP;IP;ST;EGP;IGP;NVP-II;ARGUS;XNET;UDP;PRM;XNS-IDP;RDP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;DCCP;3PC;IDPR;XTP;IDPR-CMTP;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;SKIP;any protocol;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R90">
+<ExternalDataValue>90</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.4-10.0.0.27;10.0.0.156-10.0.0.184</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.139</Selector>
+<Selector Label="Source Port">2428-2784;32712-33368</Selector>
+<Selector Label="Destination Port">20033-20095</Selector>
+<Selector Label="Protocol">IGMP;IP;IGP;BBN-RCC-MON;PUP;XNET;IDPR-CMTP;TP++;MHRP;ESP;IPv6-NoNxt;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R91">
+<ExternalDataValue>91</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.2-10.0.0.87;10.0.0.98-10.0.0.123;10.0.0.147-10.0.0.187;10.0.0.195-10.0.0.229</Selector>
+<Selector Label="Destination Address">10.0.255.2-10.0.255.184;10.0.255.210-10.0.255.255</Selector>
+<Selector Label="Source Port">16757-17037;29622-29758</Selector>
+<Selector Label="Destination Port">9160-9445;12341-12406</Selector>
+<Selector Label="Protocol">GGP;IP;TCP;NVP-II;EMCON;CHAOS;HMP;XNS-IDP;TRUNK-1;RDP;IRTP;MERIT-INP;IPv6;IPv6-Frag;RSVP;GRE;ESP;SWIPE;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R92">
+<ExternalDataValue>92</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.25-10.0.0.30;10.0.0.40-10.0.0.73;10.0.0.97-10.0.0.147;10.0.0.162-10.0.0.176;10.0.0.207-10.0.0.255</Selector>
+<Selector Label="Destination Address">10.0.255.1-10.0.255.255</Selector>
+<Selector Label="Source Port">53393-53572</Selector>
+<Selector Label="Destination Port">25947-26523</Selector>
+<Selector Label="Protocol">GGP;IP;TCP;IGP;EMCON;MUX;DCN-MEAS;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-2;RDP;IRTP;DCCP;XTP;IPv6;SDRP;IDRP;RSVP;MHRP;BNA;IPv6-NoNxt;IPv6-Opts;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R93">
+<ExternalDataValue>93</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.38;10.0.0.56-10.0.0.86;10.0.0.110-10.0.0.128;10.0.0.173-10.0.0.206</Selector>
+<Selector Label="Destination Address">10.0.255.34-10.0.255.38</Selector>
+<Selector Label="Source Port">20585-20704</Selector>
+<Selector Label="Destination Port">26827-26942;41739-42202</Selector>
+<Selector Label="Protocol">HMP;PRM;MFE-NSP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R94">
+<ExternalDataValue>94</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.3-10.0.0.4;10.0.0.19-10.0.0.30;10.0.0.43-10.0.0.47</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.78;10.0.255.95-10.0.255.135</Selector>
+<Selector Label="Source Port">8308-8349;28065-28588;64373-64844</Selector>
+<Selector Label="Destination Port">8557-8976;31885-32676</Selector>
+<Selector Label="Protocol">HOPOPT;IP;CBT;BBN-RCC-MON;ARGUS;XNET;MUX;HMP;PRM;XNS-IDP;TRUNK-2;NETBLT;MFE-NSP;IDPR;XTP;IL;IPv6;IPv6-Frag;BNA;ESP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R95">
+<ExternalDataValue>95</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.146-10.0.0.191</Selector>
+<Selector Label="Destination Address">10.0.255.8-10.0.255.52;10.0.255.86-10.0.255.97;10.0.255.147-10.0.255.167</Selector>
+<Selector Label="Source Port">26456-26728;32084-32087;53848-54307</Selector>
+<Selector Label="Destination Port">12400-12464;14986-15244</Selector>
+<Selector Label="Protocol">HOPOPT;NVP-II;ARGUS;EMCON;XNET;IPv6-Frag;AH;NARP;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R96">
+<ExternalDataValue>96</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.7-10.0.0.87;10.0.0.130-10.0.0.170;10.0.0.231-10.0.0.236</Selector>
+<Selector Label="Destination Address">10.0.255.5-10.0.255.58;10.0.255.99-10.0.255.138;10.0.255.218-10.0.255.231</Selector>
+<Selector Label="Source Port">26042-26786;43515-44096</Selector>
+<Selector Label="Destination Port">13232-13255;22569-23229</Selector>
+<Selector Label="Protocol">HOPOPT;GGP;ARGUS;UDP;DCN-MEAS;XNS-IDP;TRUNK-2;NETBLT;MERIT-INP;DCCP;3PC;IDPR;DDP;SDRP;IPv6-Route;IPv6-Frag;GRE;BNA;I-NLSP;SWIPE;IPv6-NoNxt</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R97">
+<ExternalDataValue>97</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.1-10.0.0.210;10.0.0.236-10.0.0.247</Selector>
+<Selector Label="Destination Address">10.0.255.16-10.0.255.20;10.0.255.28-10.0.255.191;10.0.255.202-10.0.255.229</Selector>
+<Selector Label="Source Port">5014-5730;26974-27167</Selector>
+<Selector Label="Destination Port">18536-18839;54647-55323</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;GGP;TCP;IGP;NVP-II;PUP;EMCON;XNET;CHAOS;UDP;MUX;HMP;PRM;XNS-IDP;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;IRTP;ISO-TP4;MFE-NSP;MERIT-INP;DCCP;3PC;XTP;DDP;IDPR-CMTP;TP++;IL;IPv6;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-NoNxt;CFTP</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R98">
+<ExternalDataValue>98</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.51;10.0.0.57-10.0.0.82;10.0.0.166-10.0.0.215</Selector>
+<Selector Label="Destination Address">10.0.255.54-10.0.255.76;10.0.255.134-10.0.255.182</Selector>
+<Selector Label="Source Port">30034-30667;31819-32022;44435-44488</Selector>
+<Selector Label="Destination Port">635-966;9002-9741;61044-61244</Selector>
+<Selector Label="Protocol">HOPOPT;ICMP;IGMP;IP;CBT;BBN-RCC-MON;NVP-II;PUP;XNET;UDP;DCN-MEAS;PRM;TRUNK-1;TRUNK-2;LEAF-1;ISO-TP4;NETBLT;MFE-NSP;DCCP;3PC;IDPR;XTP;IDPR-CMTP;IPv6-Route;IDRP;MHRP;AH;I-NLSP;SWIPE;NARP;MOBILE;TLSP;IPv6-ICMP;IPv6-NoNxt;any protocol</Selector>
+</Rule>
+<Rule Action="ALLOW" Label="R99">
+<ExternalDataValue>99</ExternalDataValue>
+<Selector Label="Source Address">10.0.0.0-10.0.0.95;10.0.0.104-10.0.0.113;10.0.0.154-10.0.0.227</Selector>
+<Selector Label="Destination Address">10.0.255.4-10.0.255.81;10.0.255.252-10.0.255.255</Selector>
+<Selector Label="Source Port">12945-13724;27137-27735</Selector>
+<Selector Label="Destination Port">32928-33574</Selector>
+<Selector Label="Protocol">ICMP;IGMP;GGP;IP;ST;CBT;EGP;IGP;BBN-RCC-MON;NVP-II;PUP;EMCON;XNET;CHAOS;MUX;DCN-MEAS;PRM;TRUNK-1;TRUNK-2;LEAF-1;LEAF-2;RDP;ISO-TP4;NETBLT;MFE-NSP;MERIT-INP;XTP;DDP;IDPR-CMTP;TP++;IPv6;SDRP;IPv6-Route;IPv6-Frag;IDRP;RSVP;GRE;MHRP;BNA;ESP;AH;I-NLSP;SWIPE;NARP;TLSP;SKIP;IPv6-ICMP;IPv6-Opts;any protocol;CFTP</Selector>
+</Rule>
+</Policy>

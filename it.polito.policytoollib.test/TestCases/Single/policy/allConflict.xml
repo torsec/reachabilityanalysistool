@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>allConflict</PolicyName>
+<PolicyType>FILTERING</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="ALLOW" Label="R1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Port">10-20</Selector>
+<Selector Label="Destination Port">10-20</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="R2">
+<ExternalDataValue>2</ExternalDataValue>
+<Selector Label="Source Port">10-20</Selector>
+<Selector Label="Destination Port">10-20</Selector>
+</Rule>
+
+
+
+
+<Rule Action="DENY" Label="R4">
+<ExternalDataValue>4</ExternalDataValue>
+<Selector Label="Source Port">30-40</Selector>
+<Selector Label="Destination Port">30-40</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="R5">
+<ExternalDataValue>5</ExternalDataValue>
+<Selector Label="Source Port">30-40</Selector>
+<Selector Label="Destination Port">30-40</Selector>
+</Rule>
+
+
+
+<Rule Action="ALLOW" Label="R6">
+<ExternalDataValue>6</ExternalDataValue>
+<Selector Label="Source Port">50-60</Selector>
+<Selector Label="Destination Port">50-60</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="R7">
+<ExternalDataValue>7</ExternalDataValue>
+<Selector Label="Source Port">55-65</Selector>
+<Selector Label="Destination Port">55-65</Selector>
+</Rule>
+
+<Rule Action="ALLOW" Label="R8">
+<ExternalDataValue>8</ExternalDataValue>
+<Selector Label="Source Port">75-75</Selector>
+<Selector Label="Destination Port">75-75</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="R9">
+<ExternalDataValue>9</ExternalDataValue>
+<Selector Label="Source Port">70-80</Selector>
+<Selector Label="Destination Port">70-80</Selector>
+</Rule>
+
+
+<!--
+<Rule Action="ALLOW" Label="R">
+<ExternalDataValue></ExternalDataValue>
+<Selector Label="Source Port"></Selector>
+<Selector Label="Destination Port"></Selector>
+</Rule>
+
+<Rule Action="DENY" Label="R">
+<ExternalDataValue></ExternalDataValue>
+<Selector Label="Source Port"></Selector>
+<Selector Label="Destination Port"></Selector>
+</Rule>
+-->
+
+
+</Policy>

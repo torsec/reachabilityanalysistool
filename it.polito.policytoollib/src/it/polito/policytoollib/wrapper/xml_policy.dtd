@@ -1,0 +1,26 @@
+<!ELEMENT Policy (PolicyName, PolicyType, Resolver , ExternalDataClass , DefAction , Rule*)>
+<!ELEMENT PolicyName (#PCDATA) >
+<!ELEMENT PolicyType (#PCDATA) >
+<!ELEMENT Resolver (#PCDATA) >
+<!ELEMENT ExternalDataClass (#PCDATA) >
+<!ELEMENT DefAction (#PCDATA) >
+
+
+<!ELEMENT Rule (ExternalDataValue? , Selector+, Transformation?, ActionData*) >
+<!ATTLIST Rule 
+	Action ( ALLOW | DENY | AH | INVERT_AH | ESP | INVERT_ESP | PRENAT | POSTNAT | LOGGING ) #REQUIRED
+	Label CDATA #IMPLIED>
+<!ELEMENT ExternalDataValue (#PCDATA) >
+
+<!ELEMENT Transformation (Selector+) >
+
+<!ELEMENT ActionData EMPTY>
+<!ATTLIST ActionData
+	Name CDATA #REQUIRED
+	Value CDATA #REQUIRED>
+	
+<!ELEMENT Selector (#PCDATA) >
+<!ATTLIST Selector
+	Label CDATA #REQUIRED>
+
+

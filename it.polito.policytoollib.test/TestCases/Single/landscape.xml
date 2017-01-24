@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Network SYSTEM "xml_network.dtd">
+<Network>
+
+     <Firewall Name="noConflict">
+        <Interface Name="noConflict.eth0" IP="10.0.0.1"/>
+        <Interface Name="noConflict.eth1" IP="10.0.1.1"/>
+    </Firewall>  
+    
+    <Firewall Name="allConflict">
+        <Interface Name="allConflict.eth0" IP="10.0.1.2"/>
+        <Interface Name="allConflict.eth1" IP="10.0.2.1"/>
+    </Firewall> 
+
+ 	<FilteringZone Name="noConflictZone" Firewall="noConflict.eth0" Subnet="10.0.0.0/24"/>
+    <FilteringZone Name="allConflictZone" Firewall="allConflict.eth1" Subnet="10.0.2.0/24"/>
+     
+    <Host Name="s1" FilteringZone="noConflictZone">
+        <Interface Name="s.eth0" IP="10.0.0.2" />
+        <Service Name="http" IP="10.0.0.2" Port="80"/>                 
+    </Host>
+
+	<Link Endpoint1="noConflict.eth1" Endpoint2="allConflict.eth0" />
+
+
+</Network>
+

@@ -1,0 +1,2 @@
+"CPIM","delivery-status","disposition-notification","example","external-body","global","global-delivery-status",
+"global-disposition-notification","global-headers","http","imdn+xml","news","partial","rfc822","s-http","sip","sipfrag","tracking-status","vnd.si.simp",

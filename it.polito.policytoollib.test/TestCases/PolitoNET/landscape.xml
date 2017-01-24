@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Network SYSTEM "xml_network.dtd">
+<Network>
+
+     <Firewall Name="fw">
+        <Interface Name="fw.eth0" IP="10.0.0.1"/>
+        <Interface Name="fw.eth1" IP="10.0.0.2"/>
+    </Firewall>  
+    
+    <Firewall Name="fwWLAN">
+        <Interface Name="fwWLAN.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwWLAN.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwWLAN.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwWLAN.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwWLAN.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwWLAN.eth5" IP="10.0.0.6"/>
+        <Interface Name="fwWLAN.eth6" IP="10.0.0.7"/>
+        <Interface Name="fwWLAN.eth7" IP="10.0.0.8"/>
+        <Interface Name="fwWLAN.eth8" IP="10.0.0.9"/>
+        <Interface Name="fwWLAN.eth9" IP="10.0.0.10"/>
+        <Interface Name="fwWLAN.eth10" IP="10.0.0.11"/>
+    </Firewall>  
+    
+    <Firewall Name="fwSERVER">
+        <Interface Name="fwSERVER.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwSERVER.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwSERVER.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwSERVER.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwSERVER.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwSERVER.eth5" IP="10.0.0.6"/>
+        <Interface Name="fwSERVER.eth6" IP="10.0.0.7"/>
+        <Interface Name="fwSERVER.eth7" IP="10.0.0.8"/>
+        <Interface Name="fwSERVER.eth8" IP="10.0.0.9"/>
+        <Interface Name="fwSERVER.eth9" IP="10.0.0.10"/>
+        <Interface Name="fwSERVER.eth10" IP="10.0.0.11"/>
+    </Firewall>  
+    
+    <Firewall Name="fwCESD">
+        <Interface Name="fwCESD.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwCESD.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwCESD.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwCESD.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwCESD.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwCESD.eth5" IP="10.0.0.6"/>
+        <Interface Name="fwCESD.eth6" IP="10.0.0.7"/>
+        <Interface Name="fwCESD.eth7" IP="10.0.0.8"/>
+        <Interface Name="fwCESD.eth8" IP="10.0.0.9"/>
+        <Interface Name="fwCESD.eth9" IP="10.0.0.10"/>
+        <Interface Name="fwCESD.eth10" IP="10.0.0.11"/>
+    </Firewall>  
+    
+    <Firewall Name="fwDIP1">
+        <Interface Name="fwDIP1.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP1.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP1.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP2">
+        <Interface Name="fwDIP2.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP2.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP2.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP3">
+        <Interface Name="fwDIP3.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP3.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP3.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP4">
+        <Interface Name="fwDIP4.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP4.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP4.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP5">
+        <Interface Name="fwDIP5.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP5.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP5.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP6">
+        <Interface Name="fwDIP6.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP6.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP6.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP7">
+        <Interface Name="fwDIP7.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP7.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP7.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP8">
+        <Interface Name="fwDIP8.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP8.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP8.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+     <Firewall Name="fwDIP9">
+        <Interface Name="fwDIP9.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP9.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP9.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+    <Firewall Name="fwDIP10">
+        <Interface Name="fwDIP10.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP10.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP10.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+    <Firewall Name="fwDIP11">
+        <Interface Name="fwDIP11.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwDIP11.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwDIP11.eth2" IP="10.0.0.3"/>
+    </Firewall> 
+    
+    <Firewall Name="fwNAT1">
+        <Interface Name="fwNAT1.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwNAT1.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwNAT1.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwNAT1.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwNAT1.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwNAT1.eth5" IP="10.0.0.6"/>
+    </Firewall> 
+    
+    <Firewall Name="fwNAT2">
+        <Interface Name="fwNAT2.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwNAT2.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwNAT2.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwNAT2.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwNAT2.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwNAT2.eth5" IP="10.0.0.6"/>
+    </Firewall> 
+    
+    <Firewall Name="fwNAT3">
+        <Interface Name="fwNAT3.eth0" IP="10.0.0.1"/>
+        <Interface Name="fwNAT3.eth1" IP="10.0.0.2"/>
+        <Interface Name="fwNAT3.eth2" IP="10.0.0.3"/>
+        <Interface Name="fwNAT3.eth3" IP="10.0.0.4"/>
+        <Interface Name="fwNAT3.eth4" IP="10.0.0.5"/>
+        <Interface Name="fwNAT3.eth5" IP="10.0.0.6"/>
+    </Firewall> 
+    
+    <Firewall Name="r">
+        <Interface Name="r.eth0" IP="10.0.0.1"/>
+        <Interface Name="r.eth1" IP="10.0.0.2"/>
+        <Interface Name="r.eth2" IP="10.0.0.2"/>
+        <Interface Name="r.eth3" IP="10.0.0.2"/>
+        <Interface Name="r.eth4" IP="10.0.0.2"/>
+        <Interface Name="r.eth5" IP="10.0.0.2"/>
+        <Interface Name="r.eth6" IP="10.0.0.2"/>
+        <Interface Name="r.eth7" IP="10.0.0.2"/>
+        <Interface Name="r.eth8" IP="10.0.0.2"/>
+        <Interface Name="r.eth9" IP="10.0.0.2"/>
+        <Interface Name="r.eth10" IP="10.0.0.2"/>
+        <Interface Name="r.eth11" IP="10.0.0.2"/>
+        <Interface Name="r.eth12" IP="10.0.0.2"/>
+        <Interface Name="r.eth13" IP="10.0.0.2"/>
+        <Interface Name="r.eth14" IP="10.0.0.2"/>
+        <Interface Name="r.eth15" IP="10.0.0.2"/>
+        <Interface Name="r.eth16" IP="10.0.0.2"/>
+        <Interface Name="r.eth17" IP="10.0.0.2"/>
+    </Firewall>
+
+ 	<FilteringZone Name="Internet" Firewall="fw.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="WLAN_1" Firewall="fwWLAN.eth0" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="WLAN_2" Firewall="fwWLAN.eth2" Subnet="10.0.2.0/24"/>
+ 	<FilteringZone Name="WLAN_3" Firewall="fwWLAN.eth3" Subnet="10.0.3.0/24"/>
+ 	<FilteringZone Name="WLAN_4" Firewall="fwWLAN.eth4" Subnet="10.0.4.0/24"/>
+ 	<FilteringZone Name="WLAN_5" Firewall="fwWLAN.eth5" Subnet="10.0.5.0/24"/>
+ 	<FilteringZone Name="WLAN_6" Firewall="fwWLAN.eth6" Subnet="10.0.6.0/24"/>
+ 	<FilteringZone Name="WLAN_7" Firewall="fwWLAN.eth7" Subnet="10.0.7.0/24"/>
+ 	<FilteringZone Name="WLAN_8" Firewall="fwWLAN.eth8" Subnet="10.0.8.0/24"/>
+ 	<FilteringZone Name="WLAN_9" Firewall="fwWLAN.eth9" Subnet="10.0.9.0/24"/>
+ 	<FilteringZone Name="WLAN_10" Firewall="fwWLAN.eth10" Subnet="10.0.10.0/24"/>
+ 	<FilteringZone Name="SERVER1" Firewall="fwSERVER.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER2" Firewall="fwSERVER.eth2" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER3" Firewall="fwSERVER.eth3" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER4" Firewall="fwSERVER.eth4" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER5" Firewall="fwSERVER.eth5" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER6" Firewall="fwSERVER.eth6" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER7" Firewall="fwSERVER.eth7" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER8" Firewall="fwSERVER.eth8" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER9" Firewall="fwSERVER.eth9" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="SERVER10" Firewall="fwSERVER.eth10" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_S1" Firewall="fwCESD.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_S2" Firewall="fwCESD.eth2" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_S3" Firewall="fwCESD.eth3" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_S4" Firewall="fwCESD.eth4" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_S5" Firewall="fwCESD.eth5" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_C1" Firewall="fwCESD.eth6" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_C2" Firewall="fwCESD.eth7" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_C3" Firewall="fwCESD.eth8" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_C4" Firewall="fwCESD.eth9" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="CESD_C5" Firewall="fwCESD.eth10" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP1" Firewall="fwDIP1.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP1p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP2" Firewall="fwDIP2.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP2p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP3" Firewall="fwDIP3.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP3p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP4" Firewall="fwDIP4.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP4p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP5" Firewall="fwDIP5.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP5p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP6" Firewall="fwDIP6.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP6p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP7" Firewall="fwDIP7.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP7p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP8" Firewall="fwDIP8.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP8p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP9" Firewall="fwDIP9.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP9p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP10" Firewall="fwDIP10.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP10p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="DIP11" Firewall="fwDIP11.eth0" Subnet="10.0.0.0/24"/>
+ 	<FilteringZone Name="DIP11p" Firewall="fwDIP1.eth2" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="NAT1_1" Firewall="fwNAT1.eth0" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="NAT1_2" Firewall="fwNAT1.eth2" Subnet="10.0.2.0/24"/>
+ 	<FilteringZone Name="NAT1_3" Firewall="fwNAT1.eth3" Subnet="10.0.3.0/24"/>
+ 	<FilteringZone Name="NAT1_4" Firewall="fwNAT1.eth4" Subnet="10.0.4.0/24"/>
+ 	<FilteringZone Name="NAT1_5" Firewall="fwNAT1.eth5" Subnet="10.0.5.0/24"/>
+ 	<FilteringZone Name="NAT2_1" Firewall="fwNAT2.eth0" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="NAT2_2" Firewall="fwNAT2.eth2" Subnet="10.0.2.0/24"/>
+ 	<FilteringZone Name="NAT2_3" Firewall="fwNAT2.eth3" Subnet="10.0.3.0/24"/>
+ 	<FilteringZone Name="NAT2_4" Firewall="fwNAT2.eth4" Subnet="10.0.4.0/24"/>
+ 	<FilteringZone Name="NAT2_5" Firewall="fwNAT2.eth5" Subnet="10.0.5.0/24"/>
+ 	<FilteringZone Name="NAT3_1" Firewall="fwNAT3.eth0" Subnet="10.0.1.0/24"/>
+ 	<FilteringZone Name="NAT3_2" Firewall="fwNAT3.eth2" Subnet="10.0.2.0/24"/>
+ 	<FilteringZone Name="NAT3_3" Firewall="fwNAT3.eth3" Subnet="10.0.3.0/24"/>
+ 	<FilteringZone Name="NAT3_4" Firewall="fwNAT3.eth4" Subnet="10.0.4.0/24"/>
+ 	<FilteringZone Name="NAT3_5" Firewall="fwNAT3.eth5" Subnet="10.0.5.0/24"/>
+ 	
+ 	<Host Name="s1" FilteringZone="SERVER1">
+        <Interface Name="s1.eth0" IP="10.0.0.0" />               
+    </Host>
+     
+    
+	<Link Endpoint1="fw.eth1" Endpoint2="r.eth0" />
+	<Link Endpoint1="fwWLAN.eth1" Endpoint2="r.eth1" />
+	<Link Endpoint1="fwSERVER.eth1" Endpoint2="r.eth2" />
+	<Link Endpoint1="fwCESD.eth1" Endpoint2="r.eth3" />
+	<Link Endpoint1="fwDIP1.eth1" Endpoint2="r.eth4" />
+	<Link Endpoint1="fwDIP2.eth1" Endpoint2="r.eth5" />
+	<Link Endpoint1="fwDIP3.eth1" Endpoint2="r.eth6" />
+	<Link Endpoint1="fwDIP4.eth1" Endpoint2="r.eth7" />
+	<Link Endpoint1="fwDIP5.eth1" Endpoint2="r.eth8" />
+	<Link Endpoint1="fwDIP6.eth1" Endpoint2="r.eth9" />
+	<Link Endpoint1="fwDIP7.eth1" Endpoint2="r.eth10" />
+	<Link Endpoint1="fwDIP8.eth1" Endpoint2="r.eth11" />
+	<Link Endpoint1="fwDIP9.eth1" Endpoint2="r.eth12" />
+	<Link Endpoint1="fwDIP10.eth1" Endpoint2="r.eth13" />
+	<Link Endpoint1="fwDIP11.eth1" Endpoint2="r.eth14" />
+	<Link Endpoint1="fwNAT1.eth1" Endpoint2="r.eth15" />
+	<Link Endpoint1="fwNAT2.eth1" Endpoint2="r.eth16" />
+	<Link Endpoint1="fwNAT3.eth1" Endpoint2="r.eth17" />
+
+</Network>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Network SYSTEM "xml_network.dtd">
+<Network>
+
+     <Firewall Name="fw1">
+        <Interface Name="fw1.eth0" IP="10.0.1.1"/>
+        <Interface Name="fw1.eth1" IP="10.0.0.1"/>
+    </Firewall>  
+    
+    <Firewall Name="fw2">
+        <Interface Name="fw2.eth0" IP="10.0.0.2"/>
+        <Interface Name="fw2.eth1" IP="10.0.2.1"/>
+    </Firewall> 
+
+ 	<FilteringZone Name="Zone1" Firewall="fw1.eth0" Subnet="10.0.1.0/24"/>
+    <FilteringZone Name="Zone2" Firewall="fw2.eth1" Subnet="10.0.2.0/24"/>
+     
+    <Host Name="s1" FilteringZone="Zone1">
+        <Interface Name="s1.eth0" IP="10.0.1.2" />
+        <Service Name="http" IP="10.0.1.2" Port="80"/>                 
+    </Host>
+
+	<Link Endpoint1="fw1.eth1" Endpoint2="fw2.eth0" />
+
+
+</Network>
+

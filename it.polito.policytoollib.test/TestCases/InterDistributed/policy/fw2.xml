@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fw2</PolicyName>
+<PolicyType>LOGGING</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>ALLOW</DefAction>
+
+<Rule Action="LOGGING" Label="fw2.R1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Port">10-20</Selector>
+<Selector Label="Destination Port">10-20</Selector>
+</Rule>
+
+<Rule Action="LOGGING" Label="fw2.R2">
+<ExternalDataValue>2</ExternalDataValue>
+<Selector Label="Source Port">30-40</Selector>
+<Selector Label="Destination Port">30-40</Selector>
+</Rule>
+
+<Rule Action="LOGGING" Label="fw2.R3">
+<ExternalDataValue>3</ExternalDataValue>
+<Selector Label="Source Port">50-60</Selector>
+<Selector Label="Destination Port">50-60</Selector>
+</Rule>
+
+<Rule Action="LOGGING" Label="fw2.R4">
+<ExternalDataValue>4</ExternalDataValue>
+<Selector Label="Source Port">70-80</Selector>
+<Selector Label="Destination Port">70-80</Selector>
+</Rule>
+
+
+</Policy>

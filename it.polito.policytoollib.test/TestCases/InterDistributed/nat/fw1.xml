@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fw1</PolicyName>
+<PolicyType>NAT</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="POSTNAT" Label="fw1.POST1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Port">50-60</Selector>
+<Selector Label="Destination Port">50-60</Selector>
+<Transformation>
+<Selector Label="Source Port">70-80</Selector>
+<Selector Label="Destination Port">70-80</Selector>
+</Transformation>
+</Rule>
+
+</Policy>

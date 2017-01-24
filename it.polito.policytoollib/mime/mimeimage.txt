@@ -1,0 +1,4 @@
+"cgm","example","fits","g3fax","gif","ief","jp2","jpeg","jpm","jpx","naplps","png","prs.btif","prs.pti","t38","tiff","tiff-fx","vnd.adobe.photoshop","vnd.cns.inf2","vnd.djvu",
+"vnd.dwg","vnd.dxf","vnd.fastbidsheet","vnd.fpx","vnd.fst","vnd.fujixerox.edmics-mmr","vnd.fujixerox.edmics-rlc","vnd.globalgraphics.pgb",
+"vnd.microsoft.icon","vnd.mix","vnd.ms-modi","vnd.net-fpx","vnd.radiance","vnd.sealed.png","vnd.sealedmedia.softseal.gif","vnd.sealedmedia.softseal.jpg","vnd.svf",
+"vnd.wap.wbmp","vnd.xiff",

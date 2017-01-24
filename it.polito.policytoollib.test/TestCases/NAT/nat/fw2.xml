@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fw2</PolicyName>
+<PolicyType>NAT</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="PRENAT" Label="fw2.PRENAT1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Destination Port">11-11</Selector>
+<Selector Label="Destination Address">10.0.2.11-10.0.2.11</Selector>
+<Transformation>
+<Selector Label="Destination Port">12-12</Selector>
+<Selector Label="Destination Address">10.0.2.12-10.0.2.12</Selector>
+</Transformation>
+</Rule>
+
+
+</Policy>

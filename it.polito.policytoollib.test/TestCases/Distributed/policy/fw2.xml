@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fw2</PolicyName>
+<PolicyType>FILTERING</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="ALLOW" Label="fw2.R1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Port">11-20</Selector>
+<Selector Label="Destination Port">10-20</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="fw2.R2">
+<ExternalDataValue>2</ExternalDataValue>
+<Selector Label="Source Port">21-30</Selector>
+<Selector Label="Destination Port">10-20</Selector>
+</Rule>
+
+
+
+
+<Rule Action="DENY" Label="fw2.R4">
+<ExternalDataValue>4</ExternalDataValue>
+<Selector Label="Source Port">31-40</Selector>
+<Selector Label="Destination Port">30-40</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="fw2.R5">
+<ExternalDataValue>5</ExternalDataValue>
+<Selector Label="Source Port">41-50</Selector>
+<Selector Label="Destination Port">30-40</Selector>
+</Rule>
+
+
+
+<Rule Action="ALLOW" Label="fw2.R6">
+<ExternalDataValue>6</ExternalDataValue>
+<Selector Label="Source Port">51-60</Selector>
+<Selector Label="Destination Port">50-60</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="fw2.R7">
+<ExternalDataValue>7</ExternalDataValue>
+<Selector Label="Source Port">61-70</Selector>
+<Selector Label="Destination Port">55-65</Selector>
+</Rule>
+
+<Rule Action="ALLOW" Label="fw2.R8">
+<ExternalDataValue>8</ExternalDataValue>
+<Selector Label="Source Port">71-80</Selector>
+<Selector Label="Destination Port">75-75</Selector>
+</Rule>
+
+<Rule Action="DENY" Label="fw2.R9">
+<ExternalDataValue>9</ExternalDataValue>
+<Selector Label="Source Port">81-90</Selector>
+<Selector Label="Destination Port">70-80</Selector>
+</Rule>
+
+
+
+</Policy>

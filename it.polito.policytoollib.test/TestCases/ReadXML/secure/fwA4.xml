@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fwA4</PolicyName>
+<PolicyType>VPN</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="INVERT_ESP" Label="fwA4.INVERT_ESP1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Address">10.1.0.5-10.1.0.5</Selector>
+<Selector Label="Destination Address">10.1.0.7-10.1.0.7</Selector>
+</Rule>
+
+</Policy>

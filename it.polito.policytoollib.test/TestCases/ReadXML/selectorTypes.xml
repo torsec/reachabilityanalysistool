@@ -1,0 +1,8 @@
+Source Address:it.polito.policytoollib.rule.selector.impl.IpSelector
+Destination Address:it.polito.policytoollib.rule.selector.impl.IpSelector
+Source Port:it.polito.policytoollib.rule.selector.impl.PortSelector
+Destination Port:it.polito.policytoollib.rule.selector.impl.PortSelector
+Protocol Type:it.polito.policytoollib.rule.selector.impl.ProtocolIDSelector
+L4Protocol:it.polito.policytoollib.rule.selector.impl.ProtocolIDSelector
+L7Protocol:it.polito.policytoollib.rule.selector.impl.UriSelector
+Http Method:it.polito.policytoollib.rule.selector.impl.HTTPMethodSelector

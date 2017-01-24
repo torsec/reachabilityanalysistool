@@ -1,0 +1,342 @@
+<!-- networkcomplextest1.xml -->
+<network id="networkcomplextest1">
+	<!-- devices type="endpoint" or type="filtering" or type="forwarding" -->
+	<!-- devices cost="" -->
+	
+  <!-- subnet1 -->	
+	<device id="net11" type="endpoint" cost="1"/>
+	<device id="net21" type="endpoint" cost="1"/>
+	<device id="net31" type="endpoint" cost="1"/>
+	<device id="net41" type="endpoint" cost="1"/>
+	<device id="net51" type="endpoint" cost="1"/>
+	<device id="net61" type="endpoint" cost="1"/>
+	<device id="net71" type="endpoint" cost="1"/>	
+	
+	<device id="rfw11" type="filtering" cost="1"/>
+	<device id="rfw21" type="filtering" cost="1"/>
+	<device id="rfw31" type="filtering" cost="1"/>
+	<device id="rfw41" type="filtering" cost="1"/>
+	<device id="rfw51" type="filtering" cost="1"/>	
+	<device id="rfw61" type="filtering" cost="1"/>
+	<device id="bkrfw1" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net11rfw11" src-device-id="net11" src-int-id="*" dst-device-id="rfw11" dst-int-id="*" />
+	<connection id="net21rfw21" src-device-id="net21" src-int-id="*" dst-device-id="rfw21" dst-int-id="*" />
+	<connection id="net31rfw31" src-device-id="net31" src-int-id="*" dst-device-id="rfw31" dst-int-id="*" />
+	<connection id="net41rfw51" src-device-id="net41" src-int-id="*" dst-device-id="rfw51" dst-int-id="*" />
+	<connection id="net51rfw51" src-device-id="net51" src-int-id="*" dst-device-id="rfw51" dst-int-id="*" />
+	<connection id="net61rfw61" src-device-id="net61" src-int-id="*" dst-device-id="rfw61" dst-int-id="*" />
+	<connection id="net71rfw41" src-device-id="net71" src-int-id="*" dst-device-id="rfw41" dst-int-id="*" />
+	<connection id="rfw11rfw21" src-device-id="rfw11" src-int-id="*" dst-device-id="rfw21" dst-int-id="*" />
+	<connection id="rfw21rfw31" src-device-id="rfw21" src-int-id="*" dst-device-id="rfw31" dst-int-id="*" />
+	<connection id="rfw21rfw41" src-device-id="rfw21" src-int-id="*" dst-device-id="rfw41" dst-int-id="*" />
+	<connection id="rfw31rfw41" src-device-id="rfw31" src-int-id="*" dst-device-id="rfw41" dst-int-id="*" />
+	<connection id="rfw31rfw51" src-device-id="rfw31" src-int-id="*" dst-device-id="rfw51" dst-int-id="*" />
+	<connection id="rfw41rfw51" src-device-id="rfw41" src-int-id="*" dst-device-id="rfw51" dst-int-id="*" />
+	<connection id="rfw41rfw61" src-device-id="rfw41" src-int-id="*" dst-device-id="rfw61" dst-int-id="*" />
+	<connection id="rfw51rfw61" src-device-id="rfw51" src-int-id="*" dst-device-id="rfw61" dst-int-id="*" />
+	<connection id="rfw11bkrfw1" src-device-id="rfw11" src-int-id="*" dst-device-id="bkrfw1" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet2 -->	
+	<device id="net12" type="endpoint" cost="1"/>
+	<device id="net22" type="endpoint" cost="1"/>
+	<device id="net32" type="endpoint" cost="1"/>
+	<device id="net42" type="endpoint" cost="1"/>
+	<device id="net52" type="endpoint" cost="1"/>
+	<device id="net62" type="endpoint" cost="1"/>
+	<device id="net72" type="endpoint" cost="1"/>	
+	
+	<device id="rfw12" type="filtering" cost="1"/>
+	<device id="rfw22" type="filtering" cost="1"/>
+	<device id="rfw32" type="filtering" cost="1"/>
+	<device id="rfw42" type="filtering" cost="1"/>
+	<device id="rfw52" type="filtering" cost="1"/>	
+	<device id="rfw62" type="filtering" cost="1"/>
+	<device id="bkrfw2" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net12rfw12" src-device-id="net12" src-int-id="*" dst-device-id="rfw12" dst-int-id="*" />
+	<connection id="net22rfw22" src-device-id="net22" src-int-id="*" dst-device-id="rfw22" dst-int-id="*" />
+	<connection id="net32rfw32" src-device-id="net32" src-int-id="*" dst-device-id="rfw32" dst-int-id="*" />
+	<connection id="net42rfw52" src-device-id="net42" src-int-id="*" dst-device-id="rfw52" dst-int-id="*" />
+	<connection id="net52rfw52" src-device-id="net52" src-int-id="*" dst-device-id="rfw52" dst-int-id="*" />
+	<connection id="net62rfw62" src-device-id="net62" src-int-id="*" dst-device-id="rfw62" dst-int-id="*" />
+	<connection id="net72rfw42" src-device-id="net72" src-int-id="*" dst-device-id="rfw42" dst-int-id="*" />
+	<connection id="rfw12rfw22" src-device-id="rfw12" src-int-id="*" dst-device-id="rfw22" dst-int-id="*" />
+	<connection id="rfw22rfw32" src-device-id="rfw22" src-int-id="*" dst-device-id="rfw32" dst-int-id="*" />
+	<connection id="rfw22rfw42" src-device-id="rfw22" src-int-id="*" dst-device-id="rfw42" dst-int-id="*" />
+	<connection id="rfw32rfw42" src-device-id="rfw32" src-int-id="*" dst-device-id="rfw42" dst-int-id="*" />
+	<connection id="rfw32rfw52" src-device-id="rfw32" src-int-id="*" dst-device-id="rfw52" dst-int-id="*" />
+	<connection id="rfw42rfw52" src-device-id="rfw42" src-int-id="*" dst-device-id="rfw52" dst-int-id="*" />
+	<connection id="rfw42rfw62" src-device-id="rfw42" src-int-id="*" dst-device-id="rfw62" dst-int-id="*" />
+	<connection id="rfw52rfw62" src-device-id="rfw52" src-int-id="*" dst-device-id="rfw62" dst-int-id="*" />
+	<connection id="rfw12bkrfw2" src-device-id="rfw12" src-int-id="*" dst-device-id="bkrfw2" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet3 -->	
+	<device id="net13" type="endpoint" cost="1"/>
+	<device id="net23" type="endpoint" cost="1"/>
+	<device id="net33" type="endpoint" cost="1"/>
+	<device id="net43" type="endpoint" cost="1"/>
+	<device id="net53" type="endpoint" cost="1"/>
+	<device id="net63" type="endpoint" cost="1"/>
+	<device id="net73" type="endpoint" cost="1"/>	
+	
+	<device id="rfw13" type="filtering" cost="1"/>
+	<device id="rfw23" type="filtering" cost="1"/>
+	<device id="rfw33" type="filtering" cost="1"/>
+	<device id="rfw43" type="filtering" cost="1"/>
+	<device id="rfw53" type="filtering" cost="1"/>	
+	<device id="rfw63" type="filtering" cost="1"/>
+	<device id="bkrfw3" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net13rfw13" src-device-id="net13" src-int-id="*" dst-device-id="rfw13" dst-int-id="*" />
+	<connection id="net23rfw23" src-device-id="net23" src-int-id="*" dst-device-id="rfw23" dst-int-id="*" />
+	<connection id="net33rfw33" src-device-id="net33" src-int-id="*" dst-device-id="rfw33" dst-int-id="*" />
+	<connection id="net43rfw53" src-device-id="net43" src-int-id="*" dst-device-id="rfw53" dst-int-id="*" />
+	<connection id="net53rfw53" src-device-id="net53" src-int-id="*" dst-device-id="rfw53" dst-int-id="*" />
+	<connection id="net63rfw63" src-device-id="net63" src-int-id="*" dst-device-id="rfw63" dst-int-id="*" />
+	<connection id="net73rfw43" src-device-id="net73" src-int-id="*" dst-device-id="rfw43" dst-int-id="*" />
+	<connection id="rfw13rfw23" src-device-id="rfw13" src-int-id="*" dst-device-id="rfw23" dst-int-id="*" />
+	<connection id="rfw23rfw33" src-device-id="rfw23" src-int-id="*" dst-device-id="rfw33" dst-int-id="*" />
+	<connection id="rfw23rfw43" src-device-id="rfw23" src-int-id="*" dst-device-id="rfw43" dst-int-id="*" />
+	<connection id="rfw33rfw43" src-device-id="rfw33" src-int-id="*" dst-device-id="rfw43" dst-int-id="*" />
+	<connection id="rfw33rfw53" src-device-id="rfw33" src-int-id="*" dst-device-id="rfw53" dst-int-id="*" />
+	<connection id="rfw43rfw53" src-device-id="rfw43" src-int-id="*" dst-device-id="rfw53" dst-int-id="*" />
+	<connection id="rfw43rfw63" src-device-id="rfw43" src-int-id="*" dst-device-id="rfw63" dst-int-id="*" />
+	<connection id="rfw53rfw63" src-device-id="rfw53" src-int-id="*" dst-device-id="rfw63" dst-int-id="*" />
+	<connection id="rfw13bkrfw3" src-device-id="rfw13" src-int-id="*" dst-device-id="bkrfw3" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet4 -->	
+	<device id="net14" type="endpoint" cost="1"/>
+	<device id="net24" type="endpoint" cost="1"/>
+	<device id="net34" type="endpoint" cost="1"/>
+	<device id="net44" type="endpoint" cost="1"/>
+	<device id="net54" type="endpoint" cost="1"/>
+	<device id="net64" type="endpoint" cost="1"/>
+	<device id="net74" type="endpoint" cost="1"/>	
+	
+	<device id="rfw14" type="filtering" cost="1"/>
+	<device id="rfw24" type="filtering" cost="1"/>
+	<device id="rfw34" type="filtering" cost="1"/>
+	<device id="rfw44" type="filtering" cost="1"/>
+	<device id="rfw54" type="filtering" cost="1"/>	
+	<device id="rfw64" type="filtering" cost="1"/>
+	<device id="bkrfw4" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net14rfw14" src-device-id="net14" src-int-id="*" dst-device-id="rfw14" dst-int-id="*" />
+	<connection id="net24rfw24" src-device-id="net24" src-int-id="*" dst-device-id="rfw24" dst-int-id="*" />
+	<connection id="net34rfw34" src-device-id="net34" src-int-id="*" dst-device-id="rfw34" dst-int-id="*" />
+	<connection id="net44rfw54" src-device-id="net44" src-int-id="*" dst-device-id="rfw54" dst-int-id="*" />
+	<connection id="net54rfw54" src-device-id="net54" src-int-id="*" dst-device-id="rfw54" dst-int-id="*" />
+	<connection id="net64rfw64" src-device-id="net64" src-int-id="*" dst-device-id="rfw64" dst-int-id="*" />
+	<connection id="net74rfw44" src-device-id="net74" src-int-id="*" dst-device-id="rfw44" dst-int-id="*" />
+	<connection id="rfw14rfw24" src-device-id="rfw14" src-int-id="*" dst-device-id="rfw24" dst-int-id="*" />
+	<connection id="rfw24rfw34" src-device-id="rfw24" src-int-id="*" dst-device-id="rfw34" dst-int-id="*" />
+	<connection id="rfw24rfw44" src-device-id="rfw24" src-int-id="*" dst-device-id="rfw44" dst-int-id="*" />
+	<connection id="rfw34rfw44" src-device-id="rfw34" src-int-id="*" dst-device-id="rfw44" dst-int-id="*" />
+	<connection id="rfw34rfw54" src-device-id="rfw34" src-int-id="*" dst-device-id="rfw54" dst-int-id="*" />
+	<connection id="rfw44rfw54" src-device-id="rfw44" src-int-id="*" dst-device-id="rfw54" dst-int-id="*" />
+	<connection id="rfw44rfw64" src-device-id="rfw44" src-int-id="*" dst-device-id="rfw64" dst-int-id="*" />
+	<connection id="rfw54rfw64" src-device-id="rfw54" src-int-id="*" dst-device-id="rfw64" dst-int-id="*" />
+	<connection id="rfw14bkrfw4" src-device-id="rfw14" src-int-id="*" dst-device-id="bkrfw4" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet5 -->	
+	<device id="net15" type="endpoint" cost="1"/>
+	<device id="net25" type="endpoint" cost="1"/>
+	<device id="net35" type="endpoint" cost="1"/>
+	<device id="net45" type="endpoint" cost="1"/>
+	<device id="net55" type="endpoint" cost="1"/>
+	<device id="net65" type="endpoint" cost="1"/>
+	<device id="net75" type="endpoint" cost="1"/>	
+	
+	<device id="rfw15" type="filtering" cost="1"/>
+	<device id="rfw25" type="filtering" cost="1"/>
+	<device id="rfw35" type="filtering" cost="1"/>
+	<device id="rfw45" type="filtering" cost="1"/>
+	<device id="rfw55" type="filtering" cost="1"/>	
+	<device id="rfw65" type="filtering" cost="1"/>
+	<device id="bkrfw5" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net15rfw15" src-device-id="net15" src-int-id="*" dst-device-id="rfw15" dst-int-id="*" />
+	<connection id="net25rfw25" src-device-id="net25" src-int-id="*" dst-device-id="rfw25" dst-int-id="*" />
+	<connection id="net35rfw35" src-device-id="net35" src-int-id="*" dst-device-id="rfw35" dst-int-id="*" />
+	<connection id="net45rfw55" src-device-id="net45" src-int-id="*" dst-device-id="rfw55" dst-int-id="*" />
+	<connection id="net55rfw55" src-device-id="net55" src-int-id="*" dst-device-id="rfw55" dst-int-id="*" />
+	<connection id="net65rfw65" src-device-id="net65" src-int-id="*" dst-device-id="rfw65" dst-int-id="*" />
+	<connection id="net75rfw45" src-device-id="net75" src-int-id="*" dst-device-id="rfw45" dst-int-id="*" />
+	<connection id="rfw15rfw25" src-device-id="rfw15" src-int-id="*" dst-device-id="rfw25" dst-int-id="*" />
+	<connection id="rfw25rfw35" src-device-id="rfw25" src-int-id="*" dst-device-id="rfw35" dst-int-id="*" />
+	<connection id="rfw25rfw45" src-device-id="rfw25" src-int-id="*" dst-device-id="rfw45" dst-int-id="*" />
+	<connection id="rfw35rfw45" src-device-id="rfw35" src-int-id="*" dst-device-id="rfw45" dst-int-id="*" />
+	<connection id="rfw35rfw55" src-device-id="rfw35" src-int-id="*" dst-device-id="rfw55" dst-int-id="*" />
+	<connection id="rfw45rfw55" src-device-id="rfw45" src-int-id="*" dst-device-id="rfw55" dst-int-id="*" />
+	<connection id="rfw45rfw65" src-device-id="rfw45" src-int-id="*" dst-device-id="rfw65" dst-int-id="*" />
+	<connection id="rfw55rfw65" src-device-id="rfw55" src-int-id="*" dst-device-id="rfw65" dst-int-id="*" />
+	<connection id="rfw15bkrfw5" src-device-id="rfw15" src-int-id="*" dst-device-id="bkrfw5" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet6 -->	
+	<device id="net16" type="endpoint" cost="1"/>
+	<device id="net26" type="endpoint" cost="1"/>
+	<device id="net36" type="endpoint" cost="1"/>
+	<device id="net46" type="endpoint" cost="1"/>
+	<device id="net56" type="endpoint" cost="1"/>
+	<device id="net66" type="endpoint" cost="1"/>
+	<device id="net76" type="endpoint" cost="1"/>	
+	
+	<device id="rfw16" type="filtering" cost="1"/>
+	<device id="rfw26" type="filtering" cost="1"/>
+	<device id="rfw36" type="filtering" cost="1"/>
+	<device id="rfw46" type="filtering" cost="1"/>
+	<device id="rfw56" type="filtering" cost="1"/>	
+	<device id="rfw66" type="filtering" cost="1"/>
+	<device id="bkrfw6" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net16rfw16" src-device-id="net16" src-int-id="*" dst-device-id="rfw16" dst-int-id="*" />
+	<connection id="net26rfw26" src-device-id="net26" src-int-id="*" dst-device-id="rfw26" dst-int-id="*" />
+	<connection id="net36rfw36" src-device-id="net36" src-int-id="*" dst-device-id="rfw36" dst-int-id="*" />
+	<connection id="net46rfw56" src-device-id="net46" src-int-id="*" dst-device-id="rfw56" dst-int-id="*" />
+	<connection id="net56rfw56" src-device-id="net56" src-int-id="*" dst-device-id="rfw56" dst-int-id="*" />
+	<connection id="net66rfw66" src-device-id="net66" src-int-id="*" dst-device-id="rfw66" dst-int-id="*" />
+	<connection id="net76rfw46" src-device-id="net76" src-int-id="*" dst-device-id="rfw46" dst-int-id="*" />
+	<connection id="rfw16rfw26" src-device-id="rfw16" src-int-id="*" dst-device-id="rfw26" dst-int-id="*" />
+	<connection id="rfw26rfw36" src-device-id="rfw26" src-int-id="*" dst-device-id="rfw36" dst-int-id="*" />
+	<connection id="rfw26rfw46" src-device-id="rfw26" src-int-id="*" dst-device-id="rfw46" dst-int-id="*" />
+	<connection id="rfw36rfw46" src-device-id="rfw36" src-int-id="*" dst-device-id="rfw46" dst-int-id="*" />
+	<connection id="rfw36rfw56" src-device-id="rfw36" src-int-id="*" dst-device-id="rfw56" dst-int-id="*" />
+	<connection id="rfw46rfw56" src-device-id="rfw46" src-int-id="*" dst-device-id="rfw56" dst-int-id="*" />
+	<connection id="rfw46rfw66" src-device-id="rfw46" src-int-id="*" dst-device-id="rfw66" dst-int-id="*" />
+	<connection id="rfw56rfw66" src-device-id="rfw56" src-int-id="*" dst-device-id="rfw66" dst-int-id="*" />
+	<connection id="rfw16bkrfw6" src-device-id="rfw16" src-int-id="*" dst-device-id="bkrfw6" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet7 -->	
+	<device id="net17" type="endpoint" cost="1"/>
+	<device id="net27" type="endpoint" cost="1"/>
+	<device id="net37" type="endpoint" cost="1"/>
+	<device id="net47" type="endpoint" cost="1"/>
+	<device id="net57" type="endpoint" cost="1"/>
+	<device id="net67" type="endpoint" cost="1"/>
+	<device id="net77" type="endpoint" cost="1"/>	
+	
+	<device id="rfw17" type="filtering" cost="1"/>
+	<device id="rfw27" type="filtering" cost="1"/>
+	<device id="rfw37" type="filtering" cost="1"/>
+	<device id="rfw47" type="filtering" cost="1"/>
+	<device id="rfw57" type="filtering" cost="1"/>	
+	<device id="rfw67" type="filtering" cost="1"/>
+	<device id="bkrfw7" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net17rfw17" src-device-id="net17" src-int-id="*" dst-device-id="rfw17" dst-int-id="*" />
+	<connection id="net27rfw27" src-device-id="net27" src-int-id="*" dst-device-id="rfw27" dst-int-id="*" />
+	<connection id="net37rfw37" src-device-id="net37" src-int-id="*" dst-device-id="rfw37" dst-int-id="*" />
+	<connection id="net47rfw57" src-device-id="net47" src-int-id="*" dst-device-id="rfw57" dst-int-id="*" />
+	<connection id="net57rfw57" src-device-id="net57" src-int-id="*" dst-device-id="rfw57" dst-int-id="*" />
+	<connection id="net67rfw67" src-device-id="net67" src-int-id="*" dst-device-id="rfw67" dst-int-id="*" />
+	<connection id="net77rfw47" src-device-id="net77" src-int-id="*" dst-device-id="rfw47" dst-int-id="*" />
+	<connection id="rfw17rfw27" src-device-id="rfw17" src-int-id="*" dst-device-id="rfw27" dst-int-id="*" />
+	<connection id="rfw27rfw37" src-device-id="rfw27" src-int-id="*" dst-device-id="rfw37" dst-int-id="*" />
+	<connection id="rfw27rfw47" src-device-id="rfw27" src-int-id="*" dst-device-id="rfw47" dst-int-id="*" />
+	<connection id="rfw37rfw47" src-device-id="rfw37" src-int-id="*" dst-device-id="rfw47" dst-int-id="*" />
+	<connection id="rfw37rfw57" src-device-id="rfw37" src-int-id="*" dst-device-id="rfw57" dst-int-id="*" />
+	<connection id="rfw47rfw57" src-device-id="rfw47" src-int-id="*" dst-device-id="rfw57" dst-int-id="*" />
+	<connection id="rfw47rfw67" src-device-id="rfw47" src-int-id="*" dst-device-id="rfw67" dst-int-id="*" />
+	<connection id="rfw57rfw67" src-device-id="rfw57" src-int-id="*" dst-device-id="rfw67" dst-int-id="*" />
+	<connection id="rfw17bkrfw7" src-device-id="rfw17" src-int-id="*" dst-device-id="bkrfw7" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet8 -->	
+	<device id="net18" type="endpoint" cost="1"/>
+	<device id="net28" type="endpoint" cost="1"/>
+	<device id="net38" type="endpoint" cost="1"/>
+	<device id="net48" type="endpoint" cost="1"/>
+	<device id="net58" type="endpoint" cost="1"/>
+	<device id="net68" type="endpoint" cost="1"/>
+	<device id="net78" type="endpoint" cost="1"/>	
+	
+	<device id="rfw18" type="filtering" cost="1"/>
+	<device id="rfw28" type="filtering" cost="1"/>
+	<device id="rfw38" type="filtering" cost="1"/>
+	<device id="rfw48" type="filtering" cost="1"/>
+	<device id="rfw58" type="filtering" cost="1"/>	
+	<device id="rfw68" type="filtering" cost="1"/>
+	<device id="bkrfw8" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net18rfw18" src-device-id="net18" src-int-id="*" dst-device-id="rfw18" dst-int-id="*" />
+	<connection id="net28rfw28" src-device-id="net28" src-int-id="*" dst-device-id="rfw28" dst-int-id="*" />
+	<connection id="net38rfw38" src-device-id="net38" src-int-id="*" dst-device-id="rfw38" dst-int-id="*" />
+	<connection id="net48rfw58" src-device-id="net48" src-int-id="*" dst-device-id="rfw58" dst-int-id="*" />
+	<connection id="net58rfw58" src-device-id="net58" src-int-id="*" dst-device-id="rfw58" dst-int-id="*" />
+	<connection id="net68rfw68" src-device-id="net68" src-int-id="*" dst-device-id="rfw68" dst-int-id="*" />
+	<connection id="net78rfw48" src-device-id="net78" src-int-id="*" dst-device-id="rfw48" dst-int-id="*" />
+	<connection id="rfw18rfw28" src-device-id="rfw18" src-int-id="*" dst-device-id="rfw28" dst-int-id="*" />
+	<connection id="rfw28rfw38" src-device-id="rfw28" src-int-id="*" dst-device-id="rfw38" dst-int-id="*" />
+	<connection id="rfw28rfw48" src-device-id="rfw28" src-int-id="*" dst-device-id="rfw48" dst-int-id="*" />
+	<connection id="rfw38rfw48" src-device-id="rfw38" src-int-id="*" dst-device-id="rfw48" dst-int-id="*" />
+	<connection id="rfw38rfw58" src-device-id="rfw38" src-int-id="*" dst-device-id="rfw58" dst-int-id="*" />
+	<connection id="rfw48rfw58" src-device-id="rfw48" src-int-id="*" dst-device-id="rfw58" dst-int-id="*" />
+	<connection id="rfw48rfw68" src-device-id="rfw48" src-int-id="*" dst-device-id="rfw68" dst-int-id="*" />
+	<connection id="rfw58rfw68" src-device-id="rfw58" src-int-id="*" dst-device-id="rfw68" dst-int-id="*" />
+	<connection id="rfw18bkrfw8" src-device-id="rfw18" src-int-id="*" dst-device-id="bkrfw8" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- subnet9 -->	
+	<device id="net19" type="endpoint" cost="1"/>
+	<device id="net29" type="endpoint" cost="1"/>
+	<device id="net39" type="endpoint" cost="1"/>
+	<device id="net49" type="endpoint" cost="1"/>
+	<device id="net59" type="endpoint" cost="1"/>
+	<device id="net69" type="endpoint" cost="1"/>
+	<device id="net79" type="endpoint" cost="1"/>	
+	
+	<device id="rfw19" type="filtering" cost="1"/>
+	<device id="rfw29" type="filtering" cost="1"/>
+	<device id="rfw39" type="filtering" cost="1"/>
+	<device id="rfw49" type="filtering" cost="1"/>
+	<device id="rfw59" type="filtering" cost="1"/>	
+	<device id="rfw69" type="filtering" cost="1"/>
+	<device id="bkrfw9" type="filtering" cost="1"/> <!-- backbone firewall router -->	
+	
+	<connection id="net19rfw19" src-device-id="net19" src-int-id="*" dst-device-id="rfw19" dst-int-id="*" />
+	<connection id="net29rfw29" src-device-id="net29" src-int-id="*" dst-device-id="rfw29" dst-int-id="*" />
+	<connection id="net39rfw39" src-device-id="net39" src-int-id="*" dst-device-id="rfw39" dst-int-id="*" />
+	<connection id="net49rfw59" src-device-id="net49" src-int-id="*" dst-device-id="rfw59" dst-int-id="*" />
+	<connection id="net59rfw59" src-device-id="net59" src-int-id="*" dst-device-id="rfw59" dst-int-id="*" />
+	<connection id="net69rfw69" src-device-id="net69" src-int-id="*" dst-device-id="rfw69" dst-int-id="*" />
+	<connection id="net79rfw49" src-device-id="net79" src-int-id="*" dst-device-id="rfw49" dst-int-id="*" />
+	<connection id="rfw19rfw29" src-device-id="rfw19" src-int-id="*" dst-device-id="rfw29" dst-int-id="*" />
+	<connection id="rfw29rfw39" src-device-id="rfw29" src-int-id="*" dst-device-id="rfw39" dst-int-id="*" />
+	<connection id="rfw29rfw49" src-device-id="rfw29" src-int-id="*" dst-device-id="rfw49" dst-int-id="*" />
+	<connection id="rfw39rfw49" src-device-id="rfw39" src-int-id="*" dst-device-id="rfw49" dst-int-id="*" />
+	<connection id="rfw39rfw59" src-device-id="rfw39" src-int-id="*" dst-device-id="rfw59" dst-int-id="*" />
+	<connection id="rfw49rfw59" src-device-id="rfw49" src-int-id="*" dst-device-id="rfw59" dst-int-id="*" />
+	<connection id="rfw49rfw69" src-device-id="rfw49" src-int-id="*" dst-device-id="rfw69" dst-int-id="*" />
+	<connection id="rfw59rfw69" src-device-id="rfw59" src-int-id="*" dst-device-id="rfw69" dst-int-id="*" />
+	<connection id="rfw19bkrfw9" src-device-id="rfw19" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" /> <!-- backbone connection -->
+	
+	
+	<!-- backbone connections -->
+	<connection id="bkrfw1bkrfw2" src-device-id="bkrfw1" src-int-id="*" dst-device-id="bkrfw2" dst-int-id="*" />
+	<connection id="bkrfw1bkrfw9" src-device-id="bkrfw1" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+   <connection id="bkrfw1bkrfw7" src-device-id="bkrfw1" src-int-id="*" dst-device-id="bkrfw7" dst-int-id="*" /> 
+	<connection id="bkrfw2bkrfw3" src-device-id="bkrfw2" src-int-id="*" dst-device-id="bkrfw3" dst-int-id="*" />
+   <connection id="bkrfw2bkrfw5" src-device-id="bkrfw2" src-int-id="*" dst-device-id="bkrfw5" dst-int-id="*" />
+   <connection id="bkrfw3bkrfw9" src-device-id="bkrfw3" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" /> 
+	<connection id="bkrfw3bkrfw4" src-device-id="bkrfw3" src-int-id="*" dst-device-id="bkrfw4" dst-int-id="*" />
+   <connection id="bkrfw3bkrfw5" src-device-id="bkrfw3" src-int-id="*" dst-device-id="bkrfw5" dst-int-id="*" />
+   <connection id="bkrfw3bkrfw7" src-device-id="bkrfw3" src-int-id="*" dst-device-id="bkrfw7" dst-int-id="*" /> 
+	<connection id="bkrfw4bkrfw5" src-device-id="bkrfw4" src-int-id="*" dst-device-id="bkrfw5" dst-int-id="*" />
+   <connection id="bkrfw4bkrfw9" src-device-id="bkrfw4" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+	<connection id="bkrfw5bkrfw6" src-device-id="bkrfw5" src-int-id="*" dst-device-id="bkrfw6" dst-int-id="*" />
+	<connection id="bkrfw5bkrfw9" src-device-id="bkrfw5" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+	<connection id="bkrfw5bkrfw8" src-device-id="bkrfw5" src-int-id="*" dst-device-id="bkrfw8" dst-int-id="*" />
+	<connection id="bkrfw6bkrfw7" src-device-id="bkrfw6" src-int-id="*" dst-device-id="bkrfw7" dst-int-id="*" />
+	<connection id="bkrfw6bkrfw8" src-device-id="bkrfw6" src-int-id="*" dst-device-id="bkrfw8" dst-int-id="*" /> 
+	<connection id="bkrfw6bkrfw9" src-device-id="bkrfw6" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+	<connection id="bkrfw7bkrfw8" src-device-id="bkrfw7" src-int-id="*" dst-device-id="bkrfw8" dst-int-id="*" />
+	<connection id="bkrfw7bkrfw9" src-device-id="bkrfw7" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+	<connection id="bkrfw8bkrfw9" src-device-id="bkrfw8" src-int-id="*" dst-device-id="bkrfw9" dst-int-id="*" />
+</network>

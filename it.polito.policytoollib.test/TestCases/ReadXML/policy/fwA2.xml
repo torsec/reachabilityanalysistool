@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy.dtd">
+<Policy>
+<PolicyName>fwA2</PolicyName>
+<PolicyType>FILTERING</PolicyType>
+<Resolver>it.polito.policytoollib.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+
+<Rule Action="ALLOW" Label="fwA2_R1">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Source Address">10.1.1.0-10.1.1.255</Selector>
+<Selector Label="Destination Address">10.1.5.2-10.1.5.2</Selector>
+<Selector Label="Destination Port">80-80</Selector>
+</Rule>
+
+</Policy>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Policy SYSTEM "xml_policy_nat.dtd">
+<Policy>
+<Resolver>org.polito.policyManagement.policy.resolution.impl.FMRResolutionStrategy</Resolver>
+<ExternalDataClass>java.lang.Integer</ExternalDataClass>
+<DefAction>DENY</DefAction>
+<Rule Action="ALLOW" Label="fw3_1" RuleIdentifier="3">
+<ExternalDataValue>1</ExternalDataValue>
+<Selector Label="Destination Port">80-80</Selector>
+<Selector Label="Source Address">1.1.1.0-1.1.1.255</Selector>
+<Selector Label="Destination Address">3.3.3.0-3.3.3.255</Selector>
+</Rule>
+</Policy>

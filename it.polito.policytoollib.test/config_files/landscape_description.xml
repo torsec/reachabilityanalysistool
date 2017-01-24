@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LandscapeDescription xmlns="http://posecco.eu/sdss/icarea/filtering/model/core">
+    
+    <networkElement id="c1">
+        <type>computer</type>
+        <networkInterface id="c1.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>1.1.1.1</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+    
+    <networkElement id="c2">
+        <type>computer</type>
+        <networkInterface id="c2.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>1.1.1.2</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+    
+    <networkElement id="c3">
+        <type>computer</type>
+        <networkInterface id="c3.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>1.1.1.3</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+   
+    <networkElement id="c4">
+        <type>computer</type>
+        <networkInterface id="c4.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>2.2.2.4</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+    
+    <networkElement id="c5">
+        <type>computer</type>
+        <networkInterface id="c5.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>2.2.2.5</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+    
+    <networkElement id="c6">
+        <type>computer</type>
+        <networkInterface id="c6.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>2.2.2.6</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+    </networkElement>
+    
+    
+    
+    
+    <networkElement id="s1">
+        <type>server</type>
+        <networkInterface id="s1.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>3.3.3.1</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service1-1">
+        	<networkInterfaceId>s1.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    <networkElement id="s2">
+        <type>server</type>
+        <networkInterface id="s2.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>3.3.3.2</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service2-1">
+        	<networkInterfaceId>s2.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    <networkElement id="s3">
+        <type>server</type>
+        <networkInterface id="s3.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>3.3.3.3</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service3-1">
+        	<networkInterfaceId>s3.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    <networkElement id="s4">
+        <type>server</type>
+        <networkInterface id="s4.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>4.4.4.4</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service4-1">
+        	<networkInterfaceId>s4.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    <networkElement id="s5">
+        <type>server</type>
+        <networkInterface id="s5.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>4.4.4.5</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service5-1">
+        	<networkInterfaceId>s5.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    <networkElement id="s6">
+        <type>server</type>
+        <networkInterface id="s6.eth0">
+            <commonName>eth0</commonName>
+            <ipv4Address>4.4.4.6</ipv4Address>
+            <ipv4Netmask>nd</ipv4Netmask>
+            <ipv6Address>nd</ipv6Address>
+            <ipv6Netmask>nd</ipv6Netmask>
+        </networkInterface>
+        <service id="service6-1">
+        	<networkInterfaceId>s6.eth0</networkInterfaceId>
+        	<url></url>
+        	<L4port>80</L4port>
+        	<L4proto>tcp</L4proto>
+        	<L7proto></L7proto>
+        </service>
+    </networkElement>
+    
+    
+    <networkElement id="fw0">
+        <type>firewall</type>
+        <networkInterface id="fw0.eth1">
+            <commonName>eth0</commonName>
+             <ipv4Address>0.0.0.1</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw0.eth2">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.2</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw0.eth3">
+            <commonName>eth0</commonName>
+             <ipv4Address>0.0.0.3</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw0.eth4">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.4</ipv4Address>
+        </networkInterface>
+        <capability>filtering</capability>
+    </networkElement>  
+    
+    <networkElement id="fw1">
+        <type>firewall</type>
+        <networkInterface id="fw1.eth0">
+            <commonName>eth0</commonName>
+             <ipv4Address> 1.1.1.0</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw1.eth1">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.11</ipv4Address>
+        </networkInterface>
+        <capability>filtering</capability>
+    </networkElement>    
+
+    <networkElement id="fw2">
+        <type>firewall</type>
+        <networkInterface id="fw2.eth0">
+            <commonName>eth0</commonName>
+             <ipv4Address> 2.2.2.0</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw1.eth2">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.22</ipv4Address>
+        </networkInterface>
+        <capability>filtering</capability>
+    </networkElement>    
+    
+    <networkElement id="fw3">
+        <type>firewall</type>
+        <networkInterface id="fw3.eth0">
+            <commonName>eth0</commonName>
+             <ipv4Address> 3.3.3.0</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw1.eth3">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.33</ipv4Address>
+        </networkInterface>
+        <capability>filtering</capability>
+    </networkElement>    
+    
+    <networkElement id="fw4">
+        <type>firewall</type>
+        <networkInterface id="fw4.eth0">
+            <commonName>eth0</commonName>
+             <ipv4Address> 4.4.4.0</ipv4Address>
+        </networkInterface>
+        <networkInterface id="fw4.eth4">
+            <commonName>eth1</commonName>
+             <ipv4Address>0.0.0.44</ipv4Address>
+        </networkInterface>
+        <capability>filtering</capability>
+    </networkElement>    
+
+    
+        
+    
+    <physicalTopology>
+		<networkConnection NetworkElementDestinationInterfaceId="fw1.eth0" NetworkElementDestinationId="fw1" NetworkElementSourceInterfaceId="c1.eth0" NetworkElementSourceId="c1" id="fw1_c1" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw1.eth0" NetworkElementDestinationId="fw1" NetworkElementSourceInterfaceId="c2.eth0" NetworkElementSourceId="c2" id="fw1_c2" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw1.eth0" NetworkElementDestinationId="fw1" NetworkElementSourceInterfaceId="c3.eth0" NetworkElementSourceId="c3" id="fw1_c3" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw1.eth1" NetworkElementDestinationId="fw1" NetworkElementSourceInterfaceId="fw0.eth1" NetworkElementSourceId="fw0" id="fw1_fw0" />        
+        
+        <networkConnection NetworkElementDestinationInterfaceId="fw2.eth0" NetworkElementDestinationId="fw2" NetworkElementSourceInterfaceId="c4.eth0" NetworkElementSourceId="c4" id="fw2_c4" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw2.eth0" NetworkElementDestinationId="fw2" NetworkElementSourceInterfaceId="c5.eth0" NetworkElementSourceId="c5" id="fw2_c5" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw2.eth0" NetworkElementDestinationId="fw2" NetworkElementSourceInterfaceId="c6.eth0" NetworkElementSourceId="c6" id="fw2_c6" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw2.eth1" NetworkElementDestinationId="fw2" NetworkElementSourceInterfaceId="fw0.eth2" NetworkElementSourceId="fw0" id="fw2_fw0" />
+		
+		<networkConnection NetworkElementDestinationInterfaceId="fw3.eth0" NetworkElementDestinationId="fw3" NetworkElementSourceInterfaceId="s1.eth0" NetworkElementSourceId="s1" id="fw3_s1" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw3.eth0" NetworkElementDestinationId="fw3" NetworkElementSourceInterfaceId="s2.eth0" NetworkElementSourceId="s2" id="fw3_s2" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw3.eth0" NetworkElementDestinationId="fw3" NetworkElementSourceInterfaceId="s3.eth0" NetworkElementSourceId="s3" id="fw3_s3" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw3.eth1" NetworkElementDestinationId="fw3" NetworkElementSourceInterfaceId="fw0.eth3" NetworkElementSourceId="fw0" id="fw3_fw0" />
+		
+		<networkConnection NetworkElementDestinationInterfaceId="fw4.eth0" NetworkElementDestinationId="fw4" NetworkElementSourceInterfaceId="s4.eth0" NetworkElementSourceId="s4" id="fw4_s4" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw4.eth0" NetworkElementDestinationId="fw4" NetworkElementSourceInterfaceId="s5.eth0" NetworkElementSourceId="s5" id="fw4_s5" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw4.eth0" NetworkElementDestinationId="fw4" NetworkElementSourceInterfaceId="s6.eth0" NetworkElementSourceId="s6" id="fw4_s6" />
+		<networkConnection NetworkElementDestinationInterfaceId="fw4.eth1" NetworkElementDestinationId="fw4" NetworkElementSourceInterfaceId="fw0.eth4" NetworkElementSourceId="fw0" id="fw4_fw0" /> 
+    </physicalTopology>
+  	 
+  	 <filteringTopology>
+  	 	<filteringZone id="zone1">
+	    	<zoneElement networkElementId="c1">
+	    		<interfaceId>c1.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="c2">
+	    		<interfaceId>c2.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="c3">
+	    		<interfaceId>c3.eth0</interfaceId>
+	    	</zoneElement>
+	    	<ipv4Subnet>1.1.1.0/24</ipv4Subnet>
+	    	<borderNetworkElement>fw1</borderNetworkElement>
+	    </filteringZone>
+	    
+	    <filteringZone id="zone2">
+	    	<zoneElement networkElementId="c4">
+	    		<interfaceId>c4.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="c5">
+	    		<interfaceId>c5.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="c5">
+	    		<interfaceId>c5.eth0</interfaceId>
+	    	</zoneElement>
+	    	<ipv4Subnet>2.2.2.0/24</ipv4Subnet>
+	    	<borderNetworkElement>fw2</borderNetworkElement>
+	    </filteringZone>
+	    
+	    <filteringZone id="zone3">
+	    	<zoneElement networkElementId="s1">
+	    		<interfaceId>s1.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="s2">
+	    		<interfaceId>s2.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="s3">
+	    		<interfaceId>s3.eth0</interfaceId>
+	    	</zoneElement>
+	    	<ipv4Subnet>3.3.3.0/24</ipv4Subnet>
+	    	<borderNetworkElement>fw3</borderNetworkElement>
+	    </filteringZone>
+	    
+	    <filteringZone id="zone4">
+	    	<zoneElement networkElementId="s4">
+	    		<interfaceId>s4.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="s5">
+	    		<interfaceId>s5.eth0</interfaceId>
+	    	</zoneElement>
+	    	<zoneElement networkElementId="s6">
+	    		<interfaceId>s6.eth0</interfaceId>
+	    	</zoneElement>
+	    	<ipv4Subnet>4.4.4.0/24</ipv4Subnet>
+	    	<borderNetworkElement>fw4</borderNetworkElement>
+	    </filteringZone>
+	    
+  	 </filteringTopology>
+</LandscapeDescription>
